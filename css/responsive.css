@@ -1,0 +1,271 @@
+/* hi-res laptops and desktops */
+@media (max-width:1281px) {
+    .sector-item>span {
+        font-size: 10px;
+    }
+
+    .offerings>.offering-image-row {
+        padding: 0 1rem;
+    }
+
+    .explore {
+        grid-template-columns: 1fr;
+    }
+
+    .semiconductor {
+        gap: 5rem;
+        padding: 4rem 6rem;
+    }
+
+    .ai {
+        margin: 0 4rem;
+        padding: 4rem 6rem;
+        gap: 5rem;
+    }
+
+    .sectors {
+        padding: 4rem 6rem;
+    }
+
+    .sectors>.sectors-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .engagements {
+        grid-template-columns: 1fr;
+        padding: 2rem 6rem;
+        gap: 1rem;
+    }
+
+    footer {
+        padding: 4rem 3rem 2rem 3rem;
+    }
+
+    footer>.footer-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    footer>.footer-content>.footer-logo {
+        padding: 0 1rem;
+    }
+
+    footer>.footer-content>.footer-info {
+        padding: 0 1rem;
+    }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (max-width:1025px) {
+    nav {
+        height: 4rem;
+        margin: 0 2rem;
+    }
+
+    .navigation>.logo {
+        margin: 0 1rem;
+    }
+
+
+    .navigation>.logo>img {
+        width: 80%;
+    }
+
+    .explore {
+        padding: 8rem 6rem 16rem 6rem;
+    }
+
+    .semiconductor {
+        gap: 2rem;
+        padding: 4rem 4rem;
+        grid-template-columns: 1fr;
+    }
+
+    .semiconductor>.semiconductor-img {
+        justify-content: center;
+    }
+
+    .semiconductor-img svg {
+        width: 80%;
+    }
+
+    .ai {
+        grid-template-columns: 1fr;
+    }
+
+    .aiml-img svg {
+        width: 80%;
+    }
+
+    .ai>.aiml-img {
+        justify-content: center;
+    }
+
+    .sectors {
+        padding: 4rem 4rem;
+    }
+
+    .sectors>.sectors-image-row {
+        padding: 2rem 0;
+    }
+
+    .engagements {
+        padding: 4rem 4rem;
+    }
+
+    .engagement-item {
+        width: 100%;
+    }
+
+    .offering {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .offering>img {
+        width: 3rem;
+    }
+
+    .offering>p {
+        padding: 0 1rem;
+    }
+
+    .offerings>.trusters-image-row img {
+        width: 80%;
+    }
+
+    .offerings>.trusters-image-row {
+        gap: 0.5rem;
+    }
+
+    footer>.footer-content>.footer-info>.address,
+    footer>.footer-content>.footer-info>.links {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    footer>.footer-copyrights {
+        grid-template-columns: 1fr;
+    }
+
+    footer>.footer-copyrights>div {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    footer>.footer-copyrights>.media {
+        justify-content: center;
+    }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (max-width:961px) {
+    .digital-transformation-banner {
+        padding: 6rem 1rem 3rem 1rem;
+        background-size: 150px auto;
+        background-position: bottom;
+        background-image: url('data:image/svg+xml;utf8,<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg" > <defs> <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse" > <circle cx="3" cy="3" r="3" fill="rgba(0,0,0,0.1)" /> </pattern> </defs> <rect width="100%" height="100%" fill="url(%23dots)" /> </svg>');
+    }
+
+    .digital-transformation-banner>p {
+        font-size: 24px;
+    }
+
+    .digital-transformation-banner>button {
+        padding: 0.6rem 1rem;
+    }
+
+    footer {
+        padding: 1.75rem 0.75rem 1rem 0.75rem;
+        font-size: 12px;
+    }
+
+    .footer-divider {
+        height: 2rem;
+    }
+
+    footer .heading {
+        font-size: 18px;
+    }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (max-width:641px) {}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (max-width:481px) {
+    nav {
+        margin: 0 1rem;
+    }
+
+    .navigation>.logo>img {
+        width: 70%;
+    }
+
+    .mobile-header {
+        gap: 1rem;
+    }
+
+    .mobile-only>.mobile-header>button {
+        font-size: 0.75rem;
+    }
+
+    .mobile-only>.mobile-header>button>img {
+        width: 0.75rem;
+    }
+
+    .offerings>.offering-image-row {
+        gap: 0;
+    }
+
+    .offering {
+        width: 8rem;
+        height: 8rem;
+        gap: 1rem;
+    }
+
+    .offering>p {
+        padding: 0 0.5rem;
+    }
+
+    .trusters {
+        margin: 0.5rem;
+    }
+
+    .explore {
+        padding: 4rem 3rem 16rem 3rem;
+        gap: 6rem;
+    }
+
+    .explore>.explore-items>.explore-item>.heading {
+        gap: 1rem;
+    }
+
+    .semiconductor {
+        gap: 1rem;
+        padding: 4rem 2rem;
+        margin: -10rem 2rem 2rem 2rem;
+    }
+
+    .ai {
+        gap: 1rem;
+        padding: 4rem 2rem;
+        margin: 2rem;
+    }
+
+    .sectors {
+        padding: 2rem;
+    }
+
+    .sectors>.sectors-image-row {
+        padding: 1rem 0;
+    }
+
+    .engagements {
+        padding: 2rem;
+    }
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (max-width:320px) {}
