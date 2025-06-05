@@ -38,7 +38,8 @@ img {
 }
 
 header {
-    background: linear-gradient(156deg, #000000 0%, #121F2C 86%, #15375A 100%);
+    /* background: linear-gradient(156deg, #000000 0%, #121F2C 86%, #15375A 100%); */
+    background: linear-gradient(170deg, #000000 0%, #121F2C 86%, #15375A 100%);
 }
 
 nav {
@@ -94,6 +95,25 @@ nav {
     display: flex;
     gap: 2rem;
     justify-content: center;
+}
+
+/* welcome banner */
+.welcome-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: linear-gradient(156deg, #000000 0%, #121F2C 86%, #15375A 100%);
+}
+
+.welcome-banner>.welcome-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-banner>.welcome-image {
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 /* Offerings */

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/career.css" />
+    <link rel="stylesheet" href="./splide-4.1.3/css/splide.min.css" />
+    <title>Acesoft</title>
+</head>
+
+<body>
+
+    <aside id="aside">
+        <div class="sidebar-header">
+            <a href="./index.html" class="logo">
+                <img alt="image" src="./images/logo.svg">
+            </a>
+
+            <button onclick="closeSidebar()">X</button>
+        </div>
+    </aside>
+
+    <div class="overlay"></div>
+
+    <header>
+        <nav class="navigation">
+            <a href="./index.html" class="logo">
+                <img src="./images/logo.svg" />
+            </a>
+
+            <ul>
+                <li><a href="">Offerings</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Industries</a></li>
+                <li><a href="">About Us</a></li>
+                <li class="active"><a href="">Careers</a></li>
+                <li>
+                    <button>
+                        <img src="./images/chevron-right.svg" style="vertical-align: middle;" /> &nbsp;Reach us</button>
+                </li>
+            </ul>
+
+            <div class="mobile-only">
+                <div class="mobile-header">
+                    <button>
+                        <img src="./images/chevron-right.svg" style="vertical-align: middle;" /> &nbsp;Reach us</button>
+
+                    <a style="cursor: pointer;" onclick="openSidebar()">
+                        <img src="./images/menu.svg" />
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="welcome-banner">
+        <div class="welcome-text">
+            <img src="./images/page-career/welcome-career.svg" />
+        </div>
+
+        <div class="welcome-image">
+            <svg width="825" height="311" viewBox="0 0 825 311" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <clippath id="clip-career">
+                        <path d="M92 3.5L4 307.5L824.5 308V3.5H92Z" />
+                    </clippath>
+                </defs>
+
+                <image href="./images/page-career/business-team-street.svg" x="0" y="0" width="825" height="311"
+                    clip-path="url(#clip-career)" preserveAspectRatio="xMidYMid slice" />
+            </svg>
+        </div>
+    </div>
+
+    <div class="career-content">
+        <h1>Join the Team</h1>
+
+        <p class="caption">Explore open roles at Acesoft Labs and find where your skills can create real impact. Whether
+            you are an
+            engineer, architect, analyst, or delivery lead, we have positions that connect you to meaningful work.
+            Browse current openings, apply directly, and take the next step with a team built around clarity, execution,
+            and growth.
+        </p>
+
+        <div class="search-form">
+            <input type="text" placeholder="Search Jobs" />
+
+            <input type="text" placeholder="Type Locations" />
+
+            <button class="search">
+                <img src="./images/icons/search.svg" />
+            </button>
+        </div>
+
+        <div class="jobs">
+            <div class="filters">
+                <ul>
+                    <li class="active"><a href="">All Positions (17)</a></li>
+                    <li><a href="">Engineering (7)</a></li>
+                    <li><a href="">Product (1)</a></li>
+                    <li><a href="">Design (4)</a></li>
+                    <li><a href="">Operation (3)</a></li>
+                    <li><a href="">Marketing (2)</a></li>
+                </ul>
+            </div>
+
+            <div class="listings">
+                <ul>
+                    <li>
+                        <h2>Full Stack Developers</h2>
+                        <ul class="tags">
+                            <li>Tartu</li>
+                            <li>Full time</li>
+                        </ul>
+                        <p>Due to growing workload, we are looking for experienced and talented Full-Stack Developers to
+                            join our fast-paced Engineering team. You will work closely with Product, Design and
+                            Marketing to analyze, develop, debug, test, roll-out and support new and existing product
+                            features.</p>
+                        <div class="flex-end">
+                            <button class="see-positions">See Positions</button>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>Application developer (react native)</h2>
+                        <ul class="tags">
+                            <li>Tartu</li>
+                            <li>Full time</li>
+                        </ul>
+                        <p>Due to growing workload, we are looking for experienced and talented Full-Stack Developers to
+                            join our fast-paced Engineering team. You will work closely with Product, Design and
+                            Marketing to analyze, develop, debug, test, roll-out and support new and existing product
+                            features.</p>
+                        <div class="flex-end">
+                            <button class="see-positions">See Positions</button>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>Senior Product designer</h2>
+                        <ul class="tags">
+                            <li>Hybrid</li>
+                            <li>Tartu</li>
+                            <li>Full time</li>
+                        </ul>
+                        <p>Due to growing workload, we are looking for experienced and talented Full-Stack Developers to
+                            join our fast-paced Engineering team. You will work closely with Product, Design and
+                            Marketing to analyze, develop, debug, test, roll-out and support new and existing product
+                            features.</p>
+                        <div class="flex-end">
+                            <button class="see-positions">See Positions</button>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>Product Manager</h2>
+                        <ul class="tags">
+                            <li>Remote</li>
+                            <li>Netherlands</li>
+                            <li>Full-time</li>
+                        </ul>
+                        <p>Due to growing workload, we are looking for experienced and talented Full-Stack Developers to
+                            join our fast-paced Engineering team. You will work closely with Product, Design and
+                            Marketing to analyze, develop, debug, test, roll-out and support new and existing product
+                            features.</p>
+                        <div class="flex-end">
+                            <button class="see-positions">See Positions</button>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="flex-center">
+                    <button class="show-more">Show more ...</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="digital-transformation-banner">
+        <h1>We are your End-to-End Service Partner in <br /> <span style="color: #1E63AD">Digital Transformation</span>
+        </h1>
+
+        <button style="font-size: 24px;">Contact Us
+            <span><img src="./images/chevron-right.svg"></span>
+        </button>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./images/footer-logo.svg" />
+            </div>
+
+            <div class="footer-info">
+                <div class="address">
+                    <div>
+                        <div class="heading">Contact</div>
+                        <div class="content">
+                            <p>Tel: +91 80 25008900
+                                <br />+91 80 25008900
+                                <br />Email: info@acesoftlabs.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="heading">USA Office</div>
+                        <div class="content">
+                            <p>Acesoft Labs Inc
+                                <br />1234, McAurthy Blvd, Suite #1000,
+                                <br />Mipiltas, CA - 95035
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="heading">Head office</div>
+                        <div class="content">
+                            <p>Acesoft Labs (India) Pvt Ltd
+                                <br />No 60,Zenith square, R.J. Garden,
+                                <br />Anand nagar, Marathalli outer ring road,
+                                <br />Bangalore 560037, India.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <div>
+                        <div class="heading">Service</div>
+                        <div class="content">
+                            <ul>
+                                <li><a href="">Enterprise Software Development</a></li>
+                                <li><a href="">Colud Computing</a></li>
+                                <li><a href="">Artificial Intelligence (AI)</a></li>
+                                <li><a href="">Cybersecurity & Risk Management</a></li>
+                                <li><a href="">Internet of Things (IoT)</a></li>
+                                <li><a href="">Data & AI-Droven Business Insights</a></li>
+                                <li><a href="">Blobal Delivery Center (GDC)</a></li>
+                                <li><a href="">Engineering Services</a></li>
+                                <li><a href="">Professional Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="heading">Industries</div>
+                        <div class="content">
+                            <ul>
+                                <li><a href="">BFSI</a></li>
+                                <li><a href="">Energy & Utilities</a></li>
+                                <li><a href="">Healthcar & Life Sciences</a></li>
+                                <li><a href="">Manufacturing</a></li>
+                                <li><a href="">Oil & Gas</a></li>
+                                <li><a href="">Retail & Consumer Goods</a></li>
+                                <li><a href="">Logistics</a></li>
+                                <li><a href="">Semiconductor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="heading">Careers</div>
+                        <div class="content">
+                            <ul>
+                                <li><a href="">Work Culture at Acesoft Labs</a></li>
+                                <li><a href="">Why Acesoft?</a></li>
+                                <li><a href="">Current Oppurtunites</a></li>
+                                <li><a href="">Employee Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="heading">Product</div>
+                        <div class="content">
+                            <ul>
+                                <li><a href="">Corporate Overview</a></li>
+                                <li><a href="">Our mission & Vision</a></li>
+                                <li><a href="">Leadership</a></li>
+                                <li><a href="">Awards & Industry Recognition</a></li>
+                                <li><a href="">Corporate Social Responsiblity</a></li>
+                                <li><a href="">Clear differentatiators</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyrights">
+            <div class="legal">
+                Legal notices | Privacy policy
+            </div>
+
+            <div class="copyrights">
+                © 2020 AcesoftLabs, All rights reserved
+            </div>
+
+            <div class="media">
+                <a href=""><img src="./images/media-links/media-x.svg" /></a>&nbsp;&nbsp;
+                <a href=""><img src="./images/media-links/media-linkedin.svg" /></a>&nbsp;&nbsp;
+                <a href=""><img src="./images/media-links/media-fb.svg" /></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
