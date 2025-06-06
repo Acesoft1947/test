@@ -18,6 +18,7 @@ button {
     box-shadow: none;
     border: none;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 button:hover {
@@ -97,23 +98,27 @@ nav {
     justify-content: center;
 }
 
-/* welcome banner */
 .welcome-banner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     background: linear-gradient(156deg, #000000 0%, #121F2C 86%, #15375A 100%);
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.welcome-banner>.welcome-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.welcome-text {
+    padding: 4rem 8rem;
 }
 
-.welcome-banner>.welcome-image {
-    display: flex;
-    justify-content: end;
-    align-items: center;
+.welcome-text,
+.welcome-image {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.welcome-text img,
+.welcome-image svg {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Offerings */

@@ -72,6 +72,10 @@
         width: 80%;
     }
 
+    .welcome-text {
+        padding: 2rem 6rem;
+    }
+
     .explore {
         padding: 8rem 6rem 16rem 6rem;
     }
@@ -161,6 +165,15 @@
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (max-width:961px) {
+    .welcome-text,
+    .welcome-image {
+        width: 100%;
+    }
+
+    .welcome-text {
+        padding: 3rem 10rem;
+    }
+
     .digital-transformation-banner {
         padding: 6rem 1rem 3rem 1rem;
         background-size: 150px auto;
@@ -213,6 +226,10 @@
 
     .mobile-only>.mobile-header>button>img {
         width: 0.75rem;
+    }
+
+    .welcome-text {
+        padding: 3rem;
     }
 
     .offerings>.offering-image-row {
