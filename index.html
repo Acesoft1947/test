@@ -33,7 +33,7 @@
             </a>
 
             <ul>
-                <li class="active"><a href="">Offerings</a></li>
+                <li><a href="">Offerings</a></li>
                 <li><a href="">Products</a></li>
                 <li><a href="">Industries</a></li>
                 <li><a href="">About Us</a></li>
@@ -57,10 +57,24 @@
         </nav>
     </header>
 
-    <div>
-        <img src="./images/bg-hero.jpg" width="100%" height="auto" />
-    </div>
+    <div class="welcome-banner">
+        <div class="welcome-text">
+            <img src="./images/page-home/home-welcome-text.svg" />
+        </div>
 
+        <div class="welcome-image">
+            <svg width="825" height="311" viewBox="0 0 825 311" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <clippath id="clip-welcome">
+                        <path d="M92 3.5L4 307.5L824.5 308V3.5H92Z" />
+                    </clippath>
+                </defs>
+
+                <image href="./images/page-home/home-welcome-bg.svg" x="0" y="0" width="825" height="311"
+                    clip-path="url(#clip-welcome)" preserveAspectRatio="xMidYMid slice" />
+            </svg>
+        </div>
+    </div>
     <div class="offerings">
         <div class="offering-image-row">
             <div class="offering">
