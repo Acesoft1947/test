@@ -11,5 +11,5 @@ function closeSidebar() {
 }
 
 function gotoContact() {
-    window.location.href = '/contact.html';
+    window.location.href = '/test/contact.html';
 }
