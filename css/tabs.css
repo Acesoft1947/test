@@ -1,0 +1,72 @@
+.tabs-container {
+    background: linear-gradient(to bottom, #31506F 0%, #223446 100%);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.tabs-container * {
+    font-family: 'Switzer Light' !important;
+    font-weight: 300;
+}
+
+.tab-buttons {
+    display: flex;
+}
+
+.tab-button>h3 {
+    padding: 0 1rem;
+}
+
+.tab-button {
+    flex: 1;
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+    font-size: 1rem;
+
+    color: white;
+    padding: 2rem;
+    background: transparent;
+}
+
+.tab-button.active {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, #0C1D2E 0%, #2D4A66 80%);
+}
+
+.tab-button.active:after {
+    content: "";
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+    height: 5px;
+    width: 80%;
+    background: linear-gradient(to right, #fcd30b 0%, #1E63AD 80%);
+}
+
+.tab-content {
+    color: #fff !important;
+    display: none;
+    padding: 4rem 8rem;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content>h3,
+.tab-content>p {
+    margin-bottom: 1rem;
+}
+
+.tab-content>ol>li {
+    list-style-type: decimal !important;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+}
+
+.tab-content>ol>li::marker {
+    font-size: 24px;
+}

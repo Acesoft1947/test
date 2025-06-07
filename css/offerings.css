@@ -1,0 +1,61 @@
+.introduction {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.accordion-container {
+    background-image: url('../images/divider-offering.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #1E2D3C;
+    background-size: 100%;
+    color: #fff;
+    padding: 8rem;
+}
+
+.accordion-container>h1 {
+    margin-bottom: 2rem;
+}
+
+.offering-bullets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 6rem;
+}
+
+.offering-bullets>.offering-bullet>.header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.additional-resources {
+    margin-bottom: 8rem;
+}
+
+.additional-resources>h1,
+.additional-resources>h3,
+.slider-buttons {
+    margin-bottom: 1rem;
+}
+
+.slider-buttons {
+    text-align: end;
+}
+
+.resource-item > img {
+    width: 80%;
+}
+
+.resource-item>h3 {
+    margin: 1rem 0;
+}
+
+.resource-item>p {
+    padding-right: 1rem;
+}
