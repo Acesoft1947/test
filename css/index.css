@@ -40,7 +40,8 @@ img {
 
 header {
     /* background: linear-gradient(156deg, #000000 0%, #121F2C 86%, #15375A 100%); */
-    background: linear-gradient(170deg, #000000 0%, #121F2C 86%, #15375A 100%);
+    /* background: linear-gradient(170deg, #000000 0%, #121F2C 86%, #15375A 100%); */
+    background: linear-gradient(100deg, #000000 0%, #121F2C 42%, #1E63AD 80%);
 }
 
 nav {
@@ -72,6 +73,7 @@ nav {
 .navigation>ul>li>a {
     text-decoration: none;
     color: #fff;
+    white-space: nowrap;
 }
 
 .navigation>ul>li:hover>a {
@@ -99,26 +101,37 @@ nav {
 }
 
 .welcome-banner {
-    background: linear-gradient(156deg, #000000 0%, #121F2C 86%, #15375A 100%);
+    background: linear-gradient(100deg, #000000 0%, #121F2C 40%, #1E63AD 80%);
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 .welcome-text {
-    padding: 4rem 8rem;
+    margin-left: 8rem;
+    flex: 1 1 400px;
 }
 
-.welcome-text,
+.welcome-text>h1 {
+    background: linear-gradient(to right, #FCD30B 0%, #549CE9 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
 .welcome-image {
-    width: 50%;
-    box-sizing: border-box;
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
 }
 
 .welcome-text img,
 .welcome-image svg {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    display: block;
 }
 
 .container {
@@ -127,6 +140,7 @@ nav {
 
 /* Offerings */
 .offerings {
+    padding-top: 4rem;
     background: linear-gradient(to bottom, #1E2D3C 0%, #1E2D3C 50%, #FCD30B 50%, #FCD30B 100%);
 }
 

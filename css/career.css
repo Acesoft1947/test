@@ -96,34 +96,12 @@ input[type="text"] {
 }
 
 @media (max-width:1025px) {
-    .welcome-banner {
-        grid-template-columns: 1fr;
-        gap: 4rem;
-    }
-
-    .welcome-banner>.welcome-text {
-        margin-top: 3rem;
-    }
-
     .career-content {
         padding: 4rem 8rem;
     }
 }
 
 @media (max-width:961px) {
-    .welcome-banner {
-        gap: 2rem;
-    }
-
-    .welcome-banner>.welcome-text {
-        margin-top: 1rem;
-    }
-
-    .welcome-image > svg {
-        width: 35rem;
-        height: auto;
-    }
-
     .career-content {
         padding: 4rem;
     }

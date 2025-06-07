@@ -73,7 +73,7 @@
     }
 
     .welcome-text {
-        padding: 2rem 6rem;
+        margin-left: 3rem;
     }
 
     .container {
@@ -169,13 +169,12 @@
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (max-width:961px) {
-    .welcome-text,
-    .welcome-image {
-        width: 100%;
+    .welcome-banner {
+        flex-wrap: wrap;
     }
 
     .welcome-text {
-        padding: 3rem 10rem;
+        padding: 3rem 3rem 0 3rem;
     }
 
     .digital-transformation-banner {
@@ -232,8 +231,12 @@
         width: 0.75rem;
     }
 
+    .welcome-banner {
+        gap: 1rem;
+    }
+
     .welcome-text {
-        padding: 3rem;
+        padding: 1rem 1rem 0 1rem;
     }
 
     .container {
