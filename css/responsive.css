@@ -76,6 +76,10 @@
         padding: 2rem 6rem;
     }
 
+    .container {
+        margin: 4rem;
+    }
+
     .explore {
         padding: 8rem 6rem 16rem 6rem;
     }
@@ -230,6 +234,10 @@
 
     .welcome-text {
         padding: 3rem;
+    }
+
+    .container {
+        margin: 2rem;
     }
 
     .offerings>.offering-image-row {

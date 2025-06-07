@@ -121,6 +121,10 @@ nav {
     display: block;
 }
 
+.container {
+    margin: 4rem 10rem;
+}
+
 /* Offerings */
 .offerings {
     background: linear-gradient(to bottom, #1E2D3C 0%, #1E2D3C 50%, #FCD30B 50%, #FCD30B 100%);
