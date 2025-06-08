@@ -11,6 +11,8 @@
 
 .tab-buttons {
     display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
 .tab-button>h3 {
@@ -69,4 +71,24 @@
 
 .tab-content>ol>li::marker {
     font-size: 24px;
+}
+
+@media (max-width: 961px) {
+    .tab-content {
+        padding: 2rem 4rem;
+    }
+
+    .tab-button {
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 481px) {
+    .tab-content>ol>li::marker {
+        font-size: 1rem;
+    }
+
+    .tab-content {
+        padding: 2rem;
+    }
 }

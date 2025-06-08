@@ -48,7 +48,7 @@
     text-align: end;
 }
 
-.resource-item > img {
+.resource-item>img {
     width: 80%;
 }
 
@@ -58,4 +58,25 @@
 
 .resource-item>p {
     padding-right: 1rem;
+}
+
+@media (max-width:1025px) {
+    .introduction {
+        grid-template-columns: 1fr;
+    }
+
+    .accordion-container {
+        padding: 4rem;
+    }
+}
+
+
+@media (max-width:481px) {
+    .accordion-container {
+        padding: 4rem 2rem;
+    }
+
+    .offering-bullets {
+        grid-template-columns: 1fr;
+    }
 }
