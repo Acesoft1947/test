@@ -29,6 +29,29 @@ aside {
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
+aside>ul {
+    color: #fff;
+}
+
+aside>ul>li {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+aside>ul>li>a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+aside>ul>li:hover>a {
+    color: #FCD30B;
+}
+
+aside>ul>li.active>a {
+    color: #FCD30B;
+}
+
 .mobile-only {
     display: none;
 }
@@ -44,11 +67,11 @@ aside.open {
     margin: 1rem 2rem;
 }
 
-.sidebar-header .logo > img {
+.sidebar-header .logo>img {
     width: 90%;
 }
 
-.sidebar-header > button {
+.sidebar-header>button {
     background-color: transparent;
     color: #FCD30B;
     font-weight: bold;
@@ -62,5 +85,11 @@ aside.open {
 
     .navigation>ul {
         display: none;
+    }
+}
+
+@media (max-width: 481px) {
+    aside.open {
+        width: 100vw;
     }
 }

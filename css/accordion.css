@@ -69,3 +69,19 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 481px) {
+    .accordion-header {
+        padding: 1rem 0;
+    }
+
+    .accordion-header::after {
+        height: 1rem;
+        width: 1rem;
+        right: 1rem;
+    }
+
+    .accordion-header.open {
+        padding-left: 1rem;
+    }
+}
