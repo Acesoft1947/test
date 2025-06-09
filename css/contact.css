@@ -55,12 +55,12 @@
     outline: none;
 }
 
-.contact-content>.form>.name {
+.contact-content>.form>form>.name {
     display: flex;
     gap: 1rem;
 }
 
-.contact-content>.form>button {
+.contact-content>.form>form>button {
     color: #fff;
     background: #1E63AD;
     padding: 0.5rem 2rem;
@@ -69,7 +69,7 @@
     margin: 1.5rem 0;
 }
 
-.contact-content>.form>button img {
+.contact-content>.form>form>button img {
     width: 18px;
     margin: 0 0.5rem;
 }
