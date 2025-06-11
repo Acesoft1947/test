@@ -84,30 +84,29 @@
         padding: 8rem 6rem 16rem 6rem;
     }
 
-    .semiconductor {
+    .ai:before {
+        background: none;
+    }
+
+    .semiconductor,
+    .ai {
         gap: 2rem;
         padding: 4rem 4rem;
         grid-template-columns: 1fr;
     }
 
-    .semiconductor>.semiconductor-img {
+    .semiconductor>.semiconductor-img,
+    .ai>.aiml-img {
         justify-content: center;
     }
 
-    .semiconductor-img svg {
-        width: 80%;
-    }
-
-    .ai {
-        grid-template-columns: 1fr;
-    }
-
+    .semiconductor-img svg,
     .aiml-img svg {
         width: 80%;
     }
 
-    .ai>.aiml-img {
-        justify-content: center;
+    .ai>.ai-info {
+        grid-row-start: 1;
     }
 
     .sectors {

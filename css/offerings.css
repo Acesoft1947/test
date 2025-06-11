@@ -1,6 +1,6 @@
 .introduction {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
     margin-bottom: 4rem;
 }
@@ -93,6 +93,11 @@
 @media (max-width: 961px) {
     .cubicle {
         padding: 1.5rem;
+    }
+
+    .offering-bullets>.offering-bullet>.header>img {
+        width: 4rem;
+        height: auto;
     }
 }
 

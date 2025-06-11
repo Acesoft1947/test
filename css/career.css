@@ -78,17 +78,6 @@ input[type="text"] {
     margin: 0.5rem 0;
 }
 
-.flex-end {
-    display: flex;
-    justify-content: end;
-}
-
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .show-more {
     border-radius: 2rem;
     padding: 1rem 2rem;

@@ -11,12 +11,12 @@
 
 .tab-buttons {
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    flex-wrap: wrap;
 }
 
 .tab-button>h3 {
     padding: 0 1rem;
+    white-space: break-spaces;
 }
 
 .tab-button {
@@ -25,9 +25,8 @@
     background: #f0f0f0;
     cursor: pointer;
     font-size: 1rem;
-
     color: white;
-    padding: 2rem;
+    padding: 1rem;
     background: transparent;
 }
 

@@ -43,16 +43,28 @@
                 <img src="../images/logo.svg" />
             </a>
 
-            <ul>
-                <li><a href="">Offerings</a></li>
-                <li><a href="">Products</a></li>
-                <li><a href="">Industries</a></li>
-                <li><a href="../about-us.html">About Us</a></li>
-                <li><a href="../career.html">Careers</a></li>
-                <li>
+                        <ul>
+                <li class="has-submenu flex-center">
+                    <a href="./cloud-solutions.html">Offerings&nbsp;&nbsp;<img
+                            src="../images/icons/dropdown-icon.svg" /></a>
+
+                    <ul class="submenu">
+                        <li><a href="./enterprise-software.html">Enterprise Software</a></li>
+                        <li><a href="./cloud-solutions.html">Cloud Solutions</a></li>
+                        <li><a href="./ai.html">AI ML</a></li>
+                        <li><a href="./engineering-services.html">Engineering Services</a></li>
+                        <li><a href="./gdc.html">GDC</a></li>
+                        <li><a href="./iot.html">IoT</a></li>
+                        <li><a href="./professional-services.html">Professional Services</a></li>
+                    </ul>
+                </li>
+                <li class="flex-center"><a href="">Products</a></li>
+                <li class="flex-center"><a href="">Industries</a></li>
+                <li class="flex-center"><a href="../about-us.html">About Us</a></li>
+                <li class="flex-center"><a href="../career.html">Careers</a></li>
+                <li class="flex-center">
                     <button onclick="gotoContact()">
-                        <img src="../images/icons/black-chevron-right.svg" style="vertical-align: middle;" />
-                        &nbsp;Reach
+                        <img src="../images/icons/black-chevron-right.svg" style="vertical-align: middle;" /> &nbsp;Reach
                         us</button>
                 </li>
             </ul>
@@ -276,29 +288,6 @@
             </div>
         </div>
 
-        <div class="cubicles">
-            <div class="cubicle">
-                <h3>Test and deploy AI models rapidly without committing to extended R&D cycles or building large
-                    internal teams from day one.</h3>
-            </div>
-            <div class="cubicle">
-                <h3>Leverage APIs, pre-trained models and low-code tools to shorten experimentation loops and accelerate
-                    time to production.</h3>
-            </div>
-            <div class="cubicle">
-                <h3>Operate under a metered model—consume only the resources you require without absorbing the cost of
-                    idle infrastructure.</h3>
-            </div>
-            <div class="cubicle">
-                <h3>Train models using proprietary business data while maintaining control, compliance and performance
-                    across secured environments.</h3>
-            </div>
-            <div class="cubicle">
-                <h3>Access state-of-the-art capabilities in natural language processing, computer vision, forecasting
-                    systems and other AI domains, without deep in-house specialization.</h3>
-            </div>
-        </div>
-
         <div class="additional-resources">
             <h1>Additional Resources</h1>
             <h3>A trove of the latest highlights and thought leadership</h3>
@@ -500,8 +489,11 @@
                 autoplay: false,
                 perPage: 3,
                 breakpoints: {
-                    481: {
+                    987: {
                         perPage: 2
+                    },
+                    481: {
+                        perPage: 1
                     }
                 }
             }).mount();
