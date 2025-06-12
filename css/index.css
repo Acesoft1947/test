@@ -511,20 +511,14 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 12rem 2rem 6rem 2rem;
+    padding: 6rem 24rem;
     flex-direction: column;
     gap: 2rem;
     background-color: #FCD30B;
-    background-image: url('data:image/svg+xml;utf8,<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg" > <defs> <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse" > <circle cx="3" cy="3" r="3" fill="rgba(0,0,0,0.1)" /> </pattern> </defs> <rect width="100%" height="100%" fill="url(%23dots)" /> </svg>'), url('data:image/svg+xml;utf8,<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg" > <defs> <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse" > <circle cx="3" cy="3" r="3" fill="rgba(0,0,0,0.1)" /> </pattern> </defs> <rect width="100%" height="100%" fill="url(%23dots)" /> </svg>');
-    background-repeat: no-repeat;
-    background-position: bottom left, bottom right;
-    background-size: 400px auto;
 }
 
 .digital-transformation-banner>p {
-
     text-align: center;
-
 }
 
 .digital-transformation-banner>p>span {
@@ -562,22 +556,6 @@ footer {
     padding: 4rem 5rem 2rem 5rem;
     position: relative;
     overflow: hidden;
-}
-
-footer:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 31.25rem;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='286' height='136' viewBox='0 0 286 136' fill='none'><path d='M147 1.5L1.5 68L147 134.5L284 66.5L147 1.5Z' stroke='darkslategrey' /></svg>");
-    background-repeat: repeat;
-    mask-image: linear-gradient(to top, #394A5B 0%, transparent 80%);
-    -webkit-mask-image: linear-gradient(to top, #394A5B 0%, transparent 80%);
-    mask-size: 100% 100%;
-    opacity: 1;
-    pointer-events: none;
 }
 
 footer>.footer-content {
