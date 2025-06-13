@@ -1,12 +1,22 @@
 .tabs-container {
     background: linear-gradient(to bottom, #31506F 0%, #223446 100%);
-    border-radius: 4rem;
+    border-radius: 1rem;
     overflow: hidden;
+    position: relative;
+}
+
+.tabs-container:after {
+    content: "";
+    position: absolute;
+    left: 0.1rem;
+    top: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(to right, #fcd30b 0%, #1E63AD 80%);
 }
 
 .tabs-container * {
     font-family: 'Switzer Light' !important;
-    font-weight: 300;
 }
 
 .tab-buttons {
@@ -31,7 +41,6 @@
 }
 
 .tab-button.active {
-    font-weight: bold;
     position: relative;
     display: inline-block;
     background: linear-gradient(to bottom, #0C1D2E 0%, #2D4A66 80%);
@@ -47,10 +56,14 @@
     background: linear-gradient(to right, #fcd30b 0%, #1E63AD 80%);
 }
 
+.tab-button.active>h3{
+    font-weight: bold;
+}
+
 .tab-content {
     color: #fff !important;
     display: none;
-    padding: 4rem 8rem;
+    padding: 4rem;
 }
 
 .tab-content.active {
@@ -62,14 +75,32 @@
     margin-bottom: 1rem;
 }
 
+.tab-content>ul,
+.tab-content>ol {
+    padding-left: 1.5rem;
+}
+
+
+.tab-content>ul>li {
+    list-style-type: disc;
+    font-size: 1.5rem;
+}
+
 .tab-content>ol>li {
     list-style-type: decimal !important;
-    margin-bottom: 1.5rem;
-    padding-left: 1rem;
+    font-size: 1.5rem;
 }
 
 .tab-content>ol>li::marker {
     font-size: 24px;
+}
+
+@media (max-width:1281px) {
+    .tab-content>ul>li,
+    .tab-content>ol>li,
+    .tab-content>ol>li::marker {
+        font-size: 1.25rem;
+    }
 }
 
 @media (max-width: 961px) {
@@ -83,6 +114,8 @@
 }
 
 @media (max-width: 481px) {
+    .tab-content>ul>li,
+    .tab-content>ol>li,
     .tab-content>ol>li::marker {
         font-size: 1rem;
     }
