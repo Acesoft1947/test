@@ -127,8 +127,66 @@ nav {
 
 .submenu {
     display: none;
-    padding: 0.8rem;
     border-radius: 1rem;
+    z-index: 999;
+    background: #fff;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    transform: translate(45%, 0);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.submenu>.get-in-touch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 15rem;
+    padding: 2rem;
+    background: rgba(217, 217, 217, 1);
+}
+
+.submenu>.get-in-touch>button {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 4rem;
+    background: #FCD30B;
+
+}
+
+.submenu>.submenu-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 2rem 3rem;
+}
+
+.submenu>.submenu-items>.submenu-item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    width: 30rem;
+}
+
+.submenu>.submenu-items>.submenu-item>.info>p {
+    margin-bottom: 0.5rem;
+}
+
+.submenu>.submenu-items>.submenu-item>.image-wrapper {
+    background: #FCD30B;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.submenu>.submenu-items>.submenu-item>.image-wrapper>img {
+    display: block;
+    width: 1.5rem;
+    height: auto;
 }
 
 .submenu>li {
@@ -136,17 +194,12 @@ nav {
     white-space: nowrap;
 }
 
-.submenu>li:hover>a{
+.submenu>li:hover>a {
     font-weight: bold;
 }
 
 .has-submenu:hover>.submenu {
-    display: block;
-    z-index: 999;
-    background: #fff;
-    position: absolute;
-    top: 4rem;
-    left: 1rem;
+    display: flex;
 }
 
 .welcome-banner {
@@ -538,7 +591,7 @@ nav {
 .digital-transformation-banner>button>span {
     background-color: #FCD30B;
     border-radius: 50%;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0.6rem;
     margin-left: 1rem;
 }
 
