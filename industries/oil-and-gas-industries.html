@@ -200,7 +200,8 @@
                 <li class="flex-center"><a href="./career.html">Careers</a></li>
                 <li class="flex-center">
                     <button onclick="gotoContact()">
-                        <img src="../images/icons/black-chevron-right.svg" style="vertical-align: middle;" /> &nbsp;Reach
+                        <img src="../images/icons/black-chevron-right.svg" style="vertical-align: middle;" />
+                        &nbsp;Reach
                         us</button>
                 </li>
             </ul>
@@ -212,9 +213,98 @@
                         &nbsp;Reach
                         us</button>
 
-                    <a style="cursor: pointer;" onclick="openSidebar()">
-                        <img src="../images/icons/menu.svg" />
-                    </a>
+                    <div class="mobile-wrapper">
+                        <a class="mobile-hamburger" onclick="toggleMobileMenu()"><img
+                                src="../images/icons/menu.svg" /></a>
+
+                        <div id="mobile-menu" class="mobile-menu">
+                            <ul>
+                                <li class="dropdown" onclick="toggleDropdown(this)">
+                                    <a>Offerings&nbsp;&nbsp;<img src="../images/icons/dropdown-icon.svg" /></a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="image-wrapper">
+                                                <img src="../images/icons/menu-esp.svg" />
+                                            </div>
+                                            <a href="../offerings/enterprise-software.html">Enterprise Software</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper" style="background: rgba(73, 151, 234, 1);">
+                                                <img src="../images/icons/menu-cc.svg" />
+                                            </div>
+                                            <a href="../offerings/cloud-solutions.html">Cloud Computing</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper">
+                                                <img src="../images/icons/menu-gdc.svg" />
+                                            </div>
+                                            <a href="../offerings/global-delivery-center.html">Global Delivery Control
+                                                (GDC)</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper" style="background: rgba(73, 151, 234, 1);">
+                                                <img src="../images/icons/menu-es.svg" />
+                                            </div>
+                                            <a href="../offerings/engineering-services.html">Engineering Services</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper">
+                                                <img src="../images/icons/menu-ai.svg" />
+                                            </div>
+                                            <a href="../offerings/data-and-ai-driven-bussiness.html">Data & AI-Driven
+                                                Business Insights</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper" style="background: rgba(73, 151, 234, 1);">
+                                                <img src="../images/icons/menu-ps.svg" />
+                                            </div>
+                                            <a href="../offerings/professional-services.html">Professional Services</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a>Products</a></li>
+                                <li class="dropdown" onclick="toggleDropdown(this)">
+                                    <a>Industries&nbsp;&nbsp;<img src="../images/icons/dropdown-icon.svg" /></a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="image-wrapper">
+                                                <img src="../images/icons/menu-bfsi.svg" />
+                                            </div>
+                                            <a href="./bfsi.html">BFSI</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper" style="background: rgba(73, 151, 234, 1);">
+                                                <img src="../images/icons/menu-energy.svg" />
+                                            </div>
+                                            <a href="./energy-and-utilities.html">Energy & Utilities</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper">
+                                                <img src="../images/icons/menu-logistics.svg" />
+                                            </div>
+                                            <a href="./logistics.html">Logistics</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper" style="background: rgba(73, 151, 234, 1);">
+                                                <img src="../images/icons/menu-manufacturing.svg" />
+                                            </div>
+                                            <a href="./manufacturing.html">Manufacturing</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper">
+                                                <img src="../images/icons/menu-oil-gas.svg" />
+                                            </div>
+                                            <a href="./oil-and-gas-industries.html">Oil & Gas Industries</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="../about-us.html">About Us</a></li>
+                                <li><a href="../career.html">Career</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>

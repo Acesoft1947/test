@@ -13,3 +13,11 @@ function closeSidebar() {
 function gotoContact() {
     window.location.href = '/test/contact.html';
 }
+
+function toggleMobileMenu() {
+    document.getElementById("mobile-menu").classList.toggle("open");    
+}
+
+function toggleDropdown(element) {
+    element.classList.toggle('open');
+}

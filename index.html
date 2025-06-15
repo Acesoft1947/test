@@ -14,24 +14,6 @@
 
 <body>
 
-    <aside id="aside">
-        <div class="sidebar-header">
-            <a href="./index.html" class="logo">
-                <img alt="image" src="./images/logo.svg">
-            </a>
-
-            <button onclick="closeSidebar()">X</button>
-        </div>
-
-        <ul>
-            <li><a href="./offerings/cloud-solutions.html">Offerings</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Industries</a></li>
-            <li><a href="./about-us.html">About Us</a></li>
-            <li><a href="./career.html">Careers</a></li>
-        </ul>
-    </aside>
-
     <div class="overlay"></div>
 
     <header>
@@ -42,8 +24,7 @@
 
             <ul>
                 <li class="has-submenu flex-center">
-                    <a href="./offerings/cloud-solutions.html">Offerings&nbsp;&nbsp;<img
-                            src="./images/icons/dropdown-icon.svg" /></a>
+                    <a>Offerings&nbsp;&nbsp;<img src="./images/icons/dropdown-icon.svg" /></a>
 
                     <div class="submenu">
                         <div class="submenu-items">
@@ -81,7 +62,7 @@
                             </a>
                             <a href="./offerings/professional-services.html" class="submenu-item">
                                 <div class="image-wrapper">
-                                    <img src="./images/icons/menu-esp.svg" />
+                                    <img src="./images/icons/menu-ps.svg" />
                                 </div>
                                 <div class="info">
                                     <p><b>Professional Services</b></p>
@@ -92,7 +73,7 @@
                             </a>
                             <a href="./offerings/global-delivery-center.html" class="submenu-item">
                                 <div class="image-wrapper">
-                                    <img src="./images/icons/menu-esp.svg" />
+                                    <img src="./images/icons/menu-gdc.svg" />
                                 </div>
                                 <div class="info">
                                     <p><b>Global Delivery Center (GDC)</b></p>
@@ -103,7 +84,7 @@
                             </a>
                             <a href="./offerings/data-and-ai-driven-bussiness.html" class="submenu-item">
                                 <div class="image-wrapper" style="background: rgba(73, 151, 234, 1);">
-                                    <img src="./images/icons/menu-esp.svg" />
+                                    <img src="./images/icons/menu-ai.svg" />
                                 </div>
                                 <div class="info">
                                     <p><b>Data & AI-Driven Business Insights</b></p>
@@ -127,10 +108,10 @@
                 </li>
 
                 <li class="has-submenu flex-center">
-                    <a href="">Products</a>
+                    <a>Products</a>
                 </li>
 
-                <li class="has-submenu flex-center"><a href="">Industries&nbsp;&nbsp;<img
+                <li class="has-submenu flex-center"><a>Industries&nbsp;&nbsp;<img
                             src="./images/icons/dropdown-icon.svg" /></a>
 
                     <div class="submenu" style="transform: translate(30%, 0);">
@@ -208,9 +189,98 @@
                         <img src="./images/icons/black-chevron-right.svg" style="vertical-align: middle;" /> &nbsp;Reach
                         us</button>
 
-                    <a style="cursor: pointer;" onclick="openSidebar()">
-                        <img src="./images/icons/menu.svg" />
-                    </a>
+                    <div class="mobile-wrapper">
+                        <a class="mobile-hamburger" onclick="toggleMobileMenu()"><img
+                                src="./images/icons/menu.svg" /></a>
+
+                        <div id="mobile-menu" class="mobile-menu">
+                            <ul>
+                                <li class="dropdown" onclick="toggleDropdown(this)">
+                                    <a>Offerings&nbsp;&nbsp;<img src="./images/icons/dropdown-icon.svg" /></a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="image-wrapper">
+                                                <img src="./images/icons/menu-esp.svg" />
+                                            </div>
+                                            <a href="./offerings/enterprise-software.html">Enterprise Software</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper" style="background: rgba(73, 151, 234, 1);">
+                                                <img src="./images/icons/menu-cc.svg" />
+                                            </div>
+                                            <a href="./offerings/cloud-solutions.html">Cloud Computing</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper">
+                                                <img src="./images/icons/menu-gdc.svg" />
+                                            </div>
+                                            <a href="./offerings/global-delivery-center.html">Global Delivery Control
+                                                (GDC)</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper" style="background: rgba(73, 151, 234, 1);">
+                                                <img src="./images/icons/menu-es.svg" />
+                                            </div>
+                                            <a href="./offerings/engineering-services.html">Engineering Services</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper">
+                                                <img src="./images/icons/menu-ai.svg" />
+                                            </div>
+                                            <a href="./offerings/data-and-ai-driven-bussiness.html">Data & AI-Driven
+                                                Business Insights</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper" style="background: rgba(73, 151, 234, 1);">
+                                                <img src="./images/icons/menu-ps.svg" />
+                                            </div>
+                                            <a href="./offerings/professional-services.html">Professional Services</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a>Products</a></li>
+                                <li class="dropdown" onclick="toggleDropdown(this)">
+                                    <a>Industries&nbsp;&nbsp;<img src="./images/icons/dropdown-icon.svg" /></a>
+
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="image-wrapper">
+                                                <img src="./images/icons/menu-bfsi.svg" />
+                                            </div>
+                                            <a href="./industries/bfsi.html">BFSI</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper" style="background: rgba(73, 151, 234, 1);">
+                                                <img src="./images/icons/menu-energy.svg" />
+                                            </div>
+                                            <a href="./industries/energy-and-utilities.html">Energy & Utilities</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper">
+                                                <img src="./images/icons/menu-logistics.svg" />
+                                            </div>
+                                            <a href="./industries/logistics.html">Logistics</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper" style="background: rgba(73, 151, 234, 1);">
+                                                <img src="./images/icons/menu-manufacturing.svg" />
+                                            </div>
+                                            <a href="./industries/manufacturing.html">Manufacturing</a>
+                                        </li>
+                                        <li>
+                                            <div class="image-wrapper">
+                                                <img src="./images/icons/menu-oil-gas.svg" />
+                                            </div>
+                                            <a href="./industries/oil-and-gas-industries.html">Oil & Gas Industries</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="./about-us.html">About Us</a></li>
+                                <li><a href="./career.html">Career</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -644,9 +714,9 @@
             </div>
 
             <div class="media">
-                <a href=""><img src="./images/media-links/media-x.svg" /></a>&nbsp;&nbsp;
-                <a href=""><img src="./images/media-links/media-linkedin.svg" /></a>&nbsp;&nbsp;
-                <a href=""><img src="./images/media-links/media-fb.svg" /></a>
+                <a><img src="./images/media-links/media-x.svg" /></a>&nbsp;&nbsp;
+                <a><img src="./images/media-links/media-linkedin.svg" /></a>&nbsp;&nbsp;
+                <a><img src="./images/media-links/media-fb.svg" /></a>
             </div>
         </div>
     </footer>

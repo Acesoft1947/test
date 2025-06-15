@@ -206,7 +206,11 @@
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (max-width:641px) {}
+@media (max-width:641px) {
+    .mobile-menu>ul>li>a {
+        width: 80vw;
+    }
+}
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 @media (max-width:481px) {
