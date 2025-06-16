@@ -1,3 +1,33 @@
+@media (max-width: 1441px) {
+    .offering {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .offering>img {
+        width: 4rem;
+    }
+
+    .offering>p {
+        padding: 0 0.5rem;
+    }
+
+    .sectors {
+        padding: 4rem 10rem;
+    }
+
+    .sectors>.sectors-info {
+        gap: 4rem;
+        grid-template-columns: 1fr  1fr;
+    }
+
+    .engagements {
+        padding: 4rem 10rem;
+        grid-template-columns: 1fr 1.5fr;
+    }
+}
+
+
 /* hi-res laptops and desktops */
 @media (max-width:1281px) {
     .sector-item>span {
