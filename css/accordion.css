@@ -19,10 +19,18 @@
     background: transparent;
     color: #fff;
     padding: 1.5rem 0rem;
+    padding-right: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .accordion-header:hover {
     font-weight: bold;
+}
+
+.accordion-header>h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .accordion-header.open {
@@ -73,6 +81,7 @@
 @media (max-width: 481px) {
     .accordion-header {
         padding: 1rem 0;
+        padding-right: 2rem;
     }
 
     .accordion-header::after {

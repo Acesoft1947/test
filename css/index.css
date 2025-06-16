@@ -541,12 +541,11 @@ nav {
 
 .digital-transformation-banner>p>span {
     color: #1E63AD;
-
     font-weight: 600;
 }
 
 .digital-transformation-banner>button {
-
+    font-size: 1.5rem;
     padding: 0.8rem 2rem;
     border-radius: 2rem;
     background: #1E63AD;
@@ -556,8 +555,12 @@ nav {
 .digital-transformation-banner>button>span {
     background-color: #FCD30B;
     border-radius: 50%;
-    padding: 0.2rem 0.6rem;
+    padding: 0.2rem 0.4rem;
     margin-left: 1rem;
+}
+
+.digital-transformation-banner>button>span>img {
+    width: 1rem;
 }
 
 .footer-divider {
