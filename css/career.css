@@ -44,12 +44,12 @@ input[type="text"] {
     border-left: 5px solid #1E63AD;
 }
 
-.jobs>.filters>ul>li.active>a{
+.jobs>.filters>ul>li.active>a {
     color: #1E63AD;
     font-weight: bold;
 }
 
-.jobs>.filters>ul>li:hover>a{
+.jobs>.filters>ul>li:hover>a {
     color: #1E63AD;
 }
 
@@ -97,5 +97,43 @@ input[type="text"] {
 
     .jobs {
         gap: 1rem;
+    }
+}
+
+@media (max-width: 481px) {
+    input[type="text"] {
+        width: 80%;
+        height: 2.5rem;
+    }
+
+    .career-content {
+        padding: 2rem;
+    }
+
+    .search-form {
+        margin: 2rem 0;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .search-form>button {
+        width: 3rem;
+    }
+
+    .search-form>button>img {
+        width: 1rem;
+    }
+
+    .jobs {
+        grid-template-columns: 1fr;
+    }
+
+    .listings .see-positions {
+        padding: 0.5rem;
+    }
+
+    .listings .tags>li {
+        padding: 0.5rem;
+        font-size: 0.8rem;
     }
 }
