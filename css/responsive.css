@@ -110,8 +110,17 @@
         width: 80%;
     }
 
+    .welcome-banner {
+        flex-wrap: wrap;
+    }
+
     .welcome-text {
-        margin-left: 3rem;
+        padding: 3rem 3rem 0 3rem;
+    }
+
+    .offerings>.offering-image-row {
+        gap: 0;
+        margin-bottom: 2rem;
     }
 
     .container {
@@ -120,6 +129,21 @@
 
     .explore {
         padding: 8rem 6rem 16rem 6rem;
+        gap: 6rem;
+    }
+
+    .explore>.explore-info {
+        flex-direction: row-reverse;
+        gap: 2rem;
+
+    }
+
+    .explore>.explore-info>.explore-image {
+        margin-top: 0;
+    }
+
+    .explore>.explore-info>.explore-image>img {
+        width: 15rem;
     }
 
     .ai:before {
@@ -210,14 +234,6 @@
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (max-width:961px) {
-    .welcome-banner {
-        flex-wrap: wrap;
-    }
-
-    .welcome-text {
-        padding: 3rem 3rem 0 3rem;
-    }
-
     .digital-transformation-banner {
         padding: 4rem 2rem;
     }

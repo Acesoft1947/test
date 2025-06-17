@@ -207,7 +207,7 @@ nav {
 
 /* Offerings */
 .offerings {
-    padding-top: 2rem;
+    padding-top: 4rem;
     background: linear-gradient(to bottom, #1E2D3C 0%, #1E2D3C 50%, #FCD30B 50%, #FCD30B 100%);
 }
 
@@ -290,19 +290,15 @@ nav {
 .explore>.explore-info {
     display: flex;
     flex-direction: column;
+    color: #fff;
 }
 
-.explore>.explore-info>.heading {
-
-
-    color: #fff;
+.explore>.explore-info>.explore-content>.heading {
     margin-bottom: 2rem;
 }
 
-.explore>.explore-info>.caption {
-
-
-    color: #fff;
+.explore>.explore-info>.explore-image {
+    margin-top: 5rem;
 }
 
 .explore>.explore-items {
@@ -317,8 +313,6 @@ nav {
     flex-direction: row;
     gap: 2rem;
     color: #fff;
-
-
     margin-bottom: 1rem;
 }
 
@@ -556,7 +550,7 @@ nav {
 .digital-transformation-banner>button>span {
     background-color: #FCD30B;
     border-radius: 50%;
-    padding: 0.2rem 0.4rem;
+    padding: 0rem 0.4rem;
     margin-left: 1rem;
 }
 
