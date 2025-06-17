@@ -265,6 +265,10 @@
     .mobile-menu>ul>li>a {
         width: 80vw;
     }
+
+    .explore>.explore-info {
+        flex-direction: column;
+    }
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
@@ -294,6 +298,7 @@
     }
 
     .welcome-text {
+        margin-left: 4rem;
         padding: 1rem 1rem 0 1rem;
     }
 
@@ -301,8 +306,13 @@
         margin: 2rem;
     }
 
+    .offerings {
+        padding-top: 1rem;
+    }
+
     .offerings>.offering-image-row {
         gap: 0;
+        padding: 0;
     }
 
     .offering {

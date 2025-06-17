@@ -180,6 +180,10 @@
         padding: 4rem 2rem;
     }
 
+    .cubicles>.cubicle {
+        padding: 1rem;
+    }
+
     .cubicles,
     .offering-bullets,
     .three-variant {
@@ -191,7 +195,11 @@
     }
 
     .offering-bullets>.offering-bullet>.header>img {
-        width: 1.5rem;
+        width: 1rem;
+    }
+
+    .offering-bullets, .cubicles {
+        margin-bottom: 2rem;
     }
 
     .arrow-list li {
