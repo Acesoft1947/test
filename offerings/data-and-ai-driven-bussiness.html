@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/sidebar.css" />
     <link rel="stylesheet" href="../css/tabs.css" />
     <link rel="stylesheet" href="../css/accordion.css" />
-    <link rel="stylesheet" href="../splide-4.1.3/css/splide.min.css" />
+
     <title>Acesoft</title>
 </head>
 
@@ -433,18 +433,23 @@
             <div class="tab-content" id="tab4">
                 <h3><b>Accelerate Insight. Amplify Outcomes.</b></h3>
                 <ol>
-                    <li><b>Business-Aligned Insight</b> - We translate data into outcomes that move your strategy forward.</li>
-                    <li><b>Modern Data Stack Expertise</b>- From cloud-native platforms to AI lifecycle management, we own the
+                    <li><b>Business-Aligned Insight</b> - We translate data into outcomes that move your strategy
+                        forward.</li>
+                    <li><b>Modern Data Stack Expertise</b>- From cloud-native platforms to AI lifecycle management, we
+                        own the
                         full
                         stack.</li>
-                    <li><b>Scalable & Secure</b> - Our architectures grow with you and stay compliant with evolving standards.
+                    <li><b>Scalable & Secure</b> - Our architectures grow with you and stay compliant with evolving
+                        standards.
                     </li>
-                    <li><b>Accelerated Time-to-Value</b> - Agile delivery means fast, actionable insights without the long
+                    <li><b>Accelerated Time-to-Value</b> - Agile delivery means fast, actionable insights without the
+                        long
                         setup.</li>
-                    <li><b>End-to-End Execution</b> - From ingestion to AI automation, we handle it all—so you can focus on
+                    <li><b>End-to-End Execution</b> - From ingestion to AI automation, we handle it all—so you can focus
+                        on
                         impact.</li>
                 </ol>
-               
+
                 <br /><br />
                 <h3><b>Ready to Turn Data into a Competitive Edge?</b></h3>
                 <h3>Let's transform the way you decide. Contact Acesoft Labs for a Discovery Consultation.</h3>
@@ -686,38 +691,9 @@
         </div>
     </footer>
 
-
-    <script src="../splide-4.1.3/js/splide.min.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/tabs.js"></script>
     <script src="../js/accordion.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var resourceSplider = new Splide('#additional-resources-splide', {
-                type: 'loop',
-                arrows: false,
-                pagination: false,
-                autoplay: false,
-                perPage: 3,
-                breakpoints: {
-                    987: {
-                        perPage: 2
-                    },
-                    481: {
-                        perPage: 1
-                    }
-                }
-            }).mount();
-
-            document.getElementById('custom-prev').addEventListener('click', () => {
-                resourceSplider.go('<'); // Go to previous slide
-            });
-
-            document.getElementById('custom-next').addEventListener('click', () => {
-                resourceSplider.go('>'); // Go to next slide
-            });
-        });
-    </script>
 </body>
 
 </html>
