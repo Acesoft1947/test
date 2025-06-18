@@ -216,11 +216,11 @@
         padding: 0 1rem;
     }
 
-    .offerings>.trusters-image-row img {
+    .offerings>.marquee-wrapper>.trusters-image-row img {
         width: 80%;
     }
 
-    .offerings>.trusters-image-row {
+    .offerings>.marquee-wrapper>.trusters-image-row {
         gap: 0.5rem;
     }
 

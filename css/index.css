@@ -258,7 +258,19 @@ nav {
     padding: 0 1.5rem;
 }
 
-.offerings>.trusters-image-row {
+.offerings>.marquee-wrapper {
+    overflow: clip;
+    position: relative;
+    width: 50%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 5rem;
+    mask-image: linear-gradient(to right, transparent, black 10rem, black calc(100% - 10rem), transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10rem, black calc(100% - 10rem), transparent);
+
+}
+
+.offerings>.marquee-wrapper>.trusters-image-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -266,16 +278,16 @@ nav {
     justify-content: center;
     gap: 1rem;
     padding-bottom: 2rem;
+    width: max-content;
+    animation: marquee 20s linear infinite;
 }
 
-.offerings>.trusters-image-row>div {
+.offerings>.marquee-wrapper>.trusters-image-row>div {
     flex: 0 1 auto;
-    /* Allow the div to shrink and grow as needed */
     max-width: 100%;
-    /* Prevent overflow */
 }
 
-.offerings>.trusters-image-row img {
+.offerings>.marquee-wrapper>.trusters-image-row img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -336,7 +348,7 @@ nav {
     gap: 2rem;
     color: #fff;
     margin-bottom: 1rem;
-    
+
 }
 
 .explore>.explore-items>.explore-item>.caption>p {
@@ -786,4 +798,15 @@ footer>.footer-copyrights>.media {
 .dropdown-menu>li>.image-wrapper>img {
     width: 1rem;
     height: auto;
+}
+
+/* Animations */
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
