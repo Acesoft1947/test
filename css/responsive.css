@@ -322,6 +322,14 @@
         width: 0.75rem;
     }
 
+    .go-to-contact {
+        display: none;
+    }
+
+    .on-smallest-device {
+        display: flex;
+    }
+
     .welcome-banner {
         gap: 1rem;
     }
@@ -365,25 +373,42 @@
         margin: 0.5rem;
     }
 
-    .explore {
-        padding: 4rem 3rem 16rem 3rem;
-        gap: 6rem;
-    }
-
     .explore>.explore-items>.explore-item>.heading {
         gap: 1rem;
     }
 
+    .explore {
+        padding: 4rem 2rem 16rem 2rem;
+        gap: 2rem;
+    }
+
+    .explore>.explore-items {
+        gap: 1.5rem;
+    }
+
+    .explore>.explore-items>.explore-item {
+        padding: 1rem 0;
+    }
+
+
     .semiconductor {
         gap: 1rem;
-        padding: 4rem 2rem;
-        margin: -10rem 2rem 2rem 2rem;
+        margin: -10rem 1rem 2rem 1rem;
     }
 
     .ai {
         gap: 1rem;
         padding: 4rem 2rem;
-        margin: 2rem;
+    }
+
+    
+    .semiconductor,
+    .ai {
+        padding: 2rem;
+    }
+
+    .ai {
+        margin: 1rem;
     }
 
     .sectors {
@@ -411,27 +436,6 @@
 @media (max-width:321px) {
     .navigation>.logo>img {
         width: 80%;
-    }
-
-    .go-to-contact {
-        display: none;
-    }
-
-    .on-smallest-device {
-        display: flex;
-    }
-
-    .explore {
-        padding: 4rem 2rem 16rem 2rem;
-        gap: 2rem;
-    }
-
-    .explore>.explore-items {
-        gap: 1.5rem;
-    }
-
-    .explore>.explore-items>.explore-item {
-        padding: 1rem 0;
     }
 
     .offering {
