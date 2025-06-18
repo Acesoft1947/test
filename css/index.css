@@ -167,6 +167,11 @@ nav {
     display: flex;
 }
 
+.on-smallest-device {
+    display: none;
+}
+
+/* Welcome */
 .welcome-banner {
     background: linear-gradient(100deg, #000000 0%, #121F2C 40%, #1E63AD 100%);
     display: flex;
@@ -225,7 +230,7 @@ nav {
     height: 12rem;
     width: 12rem;
     border-radius: 50%;
-    background-color: #121F2C;
+    background-color: #1F2022;
     color: #AEC3D9;
     display: flex;
     flex-direction: column;
@@ -236,6 +241,12 @@ nav {
     padding: 1rem;
     margin: 0.5rem;
     overflow: hidden;
+    opacity: 1 !important;
+}
+
+.offering:hover {
+    background: linear-gradient(200deg, #7B8188 20%, #1F2022 50%);
+    box-shadow: 0 4px 9px 9px rgba(0, 0, 0, 0.25);
 }
 
 .offering>img {
@@ -283,8 +294,8 @@ nav {
     background-size: 100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 9rem;
-    padding: 12rem 10rem 20rem 10rem;
+    gap: 6rem;
+    padding: 12rem 10rem 14rem 10rem;
 }
 
 .explore>.explore-info {
@@ -304,7 +315,18 @@ nav {
 .explore>.explore-items {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
+}
+
+.explore>.explore-items>.explore-item {
+    opacity: 1 !important;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.explore>.explore-items>.explore-item:hover {
+    border: 1px solid #41607F;
+    box-shadow: 0px 4px 8px 0px rgba(27, 26, 26, 0.5);
 }
 
 .explore>.explore-items>.explore-item>.heading {
@@ -314,10 +336,10 @@ nav {
     gap: 2rem;
     color: #fff;
     margin-bottom: 1rem;
+    
 }
 
 .explore>.explore-items>.explore-item>.caption>p {
-
     color: #fff;
 }
 

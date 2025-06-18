@@ -1,4 +1,8 @@
 @media (max-width: 1441px) {
+    .explore {
+        padding: 10rem 8rem 14rem 8rem;
+    }
+
     .offering {
         width: 10rem;
         height: 10rem;
@@ -14,6 +18,12 @@
 
     .sectors {
         padding: 4rem 10rem;
+    }
+
+    .semiconductor,
+    .ai {
+        padding: 6rem 10rem;
+        gap: 4rem;
     }
 
     .sectors>.sectors-info {
@@ -138,6 +148,12 @@
 
     }
 
+    .explore>.explore-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
     .explore>.explore-info>.explore-image {
         margin-top: 0;
     }
@@ -164,7 +180,7 @@
 
     .semiconductor-img svg,
     .aiml-img svg {
-        width: 80%;
+        width: 60%;
     }
 
     .ai>.ai-info {
@@ -257,6 +273,11 @@
 
     footer .heading {
         font-size: 18px;
+    }
+
+    .explore>.explore-items {
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 }
 
@@ -372,4 +393,60 @@
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
-@media (max-width:320px) {}
+@media (max-width:321px) {
+    .navigation>.logo>img {
+        width: 80%;
+    }
+
+    .go-to-contact {
+        display: none;
+    }
+
+    .on-smallest-device {
+        display: flex;
+    }
+
+    .explore {
+        padding: 4rem 2rem 16rem 2rem;
+        gap: 2rem;
+    }
+
+    .explore>.explore-items {
+        gap: 1.5rem;
+    }
+
+    .explore>.explore-items>.explore-item {
+        padding: 1rem 0;
+    }
+
+    .offering {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .offering>img {
+        width: 2rem;
+    }
+
+    .offering>p {
+        padding: 0;
+    }
+
+    .semiconductor,
+    .ai {
+        padding: 2rem;
+    }
+
+    .ai {
+        margin: 1rem;
+    }
+
+    .semiconductor {
+        margin: -10rem 1rem 2rem 1rem;
+    }
+
+    .sectors,
+    .engagements {
+        padding: 1.5rem;
+    }
+}

@@ -185,7 +185,7 @@
 
             <div class="mobile-only">
                 <div class="mobile-header">
-                    <button onclick="gotoContact()">
+                    <button onclick="gotoContact()" class="go-to-contact">
                         <img src="./images/icons/black-chevron-right.svg" style="vertical-align: middle;" /> &nbsp;Reach
                         us</button>
 
@@ -278,6 +278,7 @@
                                 </li>
                                 <li><a href="./about-us.html">About Us</a></li>
                                 <li><a href="./career.html">Career</a></li>
+                                <li class="on-smallest-device"><a onclick="gotoContact()">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -306,35 +307,35 @@
     </div>
     <div class="offerings">
         <div class="offering-image-row">
-            <div class="offering">
+            <a href="./offerings/enterprise-software.html" class="offering">
                 <img src="./images/offerings/offerings-esp.svg" alt="Enterprise Software Development">
                 <p>Enterprise Software Development</p>
-            </div>
+            </a>
 
-            <div class="offering">
+            <a href="./offerings/cloud-solutions.html" class="offering">
                 <img src="./images/offerings/offerings-cloud-computing.svg" alt="Cloud Computing">
                 <p>Cloud Computing</p>
-            </div>
+            </a>
 
-            <div class="offering">
+            <a href="./offerings/data-and-ai-driven-bussiness.html" class="offering">
                 <img src="./images/offerings/offerings-aiml.svg" alt="Data & AI-Driven Business Insights">
                 <p>Data & AI-Driven Business Insights</p>
-            </div>
+            </a>
 
-            <div class="offering">
+            <a href="./offerings/global-delivery-center.html" class="offering">
                 <img src="./images/offerings/offerings-gdc.svg" alt="Global Delivery Center">
                 <p>Global Delivery Center (GDC)</p>
-            </div>
+            </a>
 
-            <div class="offering">
+            <a href="./offerings/engineering-services.html" class="offering">
                 <img src="./images/offerings/offerings-engineering-services.svg" alt="Engineering Services">
                 <p>Engineering Services</p>
-            </div>
+            </a>
 
-            <div class="offering">
+            <a href="./offerings/professional-services.html" class="offering">
                 <img src="./images/offerings/offerings-professional-services.svg" alt="Professional Services">
                 <p>Professional Services</p>
-            </div>
+            </a>
         </div>
 
         <div class="trusters-image-row">
@@ -377,7 +378,7 @@
         </div>
 
         <div class="explore-items">
-            <div class="explore-item">
+            <a href="./offerings/enterprise-software.html" class="explore-item">
                 <div class="heading">
                     <img src="./images/offerings/offerings-esp.svg" />
                     <h3>Enterprise Software Development</h3>
@@ -387,8 +388,8 @@
                         specialize in distributed systems, microservices, and cloud-native platforms, ensuring
                         flexibility and reliability across your digital ecosystem.</p>
                 </div>
-            </div>
-            <div class="explore-item">
+            </a>
+            <a href="./offerings/cloud-solutions.html" class="explore-item">
                 <div class="heading">
                     <img src="./images/offerings/offerings-cloud-computing.svg" />
                     <h3>Cloud Computing</h3>
@@ -398,8 +399,8 @@
                         secure, scalable environments with built-in CI/CD pipelines, autoscaling, and service mesh for
                         high availability and speed.</p>
                 </div>
-            </div>
-            <div class="explore-item">
+            </a>
+            <a href="./offerings/data-and-ai-driven-bussiness.html" class="explore-item">
                 <div class="heading">
                     <img src="./images/offerings/offerings-aiml.svg" />
                     <h3>Data & AI-Driven Business Insights</h3>
@@ -409,8 +410,8 @@
                         processing. Our platforms are built for high-volume ingestion, data pipeline optimization, and
                         AI model integration using tools like Spark, Kafka, and Flink.</p>
                 </div>
-            </div>
-            <div class="explore-item">
+            </a>
+            <a href="./offerings/global-delivery-center.html" class="explore-item">
                 <div class="heading">
                     <img src="./images/offerings/offerings-gdc.svg" />
                     <h3>Global Delivery Center (GDC)</h3>
@@ -420,8 +421,8 @@
                         operations across multiple geographies. It typically offers round-the-clock service leveraging
                         time-zone advantages, cost-effective offshore resources, and a skilled talent pool.</p>
                 </div>
-            </div>
-            <div class="explore-item">
+            </a>
+            <a href="./offerings/engineering-services.html" class="explore-item">
                 <div class="heading">
                     <img src="./images/offerings/offerings-engineering-services.svg" />
                     <h3>Engineering Services</h3>
@@ -431,8 +432,8 @@
                         production-tested for accuracy, adaptability, and performance, helping you automate decisions
                         and unlock deeper insights.</p>
                 </div>
-            </div>
-            <div class="explore-item">
+            </a>
+            <a href="./offerings/professional-services.html" class="explore-item">
                 <div class="heading">
                     <img src="./images/offerings/offerings-professional-services.svg" />
                     <h3>Professional Services</h3>
@@ -443,7 +444,7 @@
                         domains, and geographies. Their services ensure faster onboarding, reduced hiring risks, and
                         scalable support aligned with client goals and timelines.</p>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 
