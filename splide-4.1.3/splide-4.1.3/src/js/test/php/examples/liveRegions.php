@@ -40,7 +40,7 @@ $settings = get_settings();
 			<ul class="splide__list">
 				<li class="splide__slide">
 					<div class="splide__slide__inner">
-						<img src="../../assets/images/planets/neptune.jpg"
+						<img alt="image" loading="lazy" src="../../assets/images/planets/neptune.jpg"
 						     alt="">
 						<h3 class="splide__heading">Neptune</h3>
 						<div class="splide__desc">
@@ -54,7 +54,7 @@ $settings = get_settings();
 				<li class="splide__slide">
 					<div class="splide__slide__inner">
 
-						<img src="../../assets/images/planets/saturn.jpg"
+						<img alt="image" loading="lazy" src="../../assets/images/planets/saturn.jpg"
 						     alt="">
 						<h3 class="splide__heading">Saturn</h3>
 						<div class="splide__desc">
@@ -68,7 +68,7 @@ $settings = get_settings();
 				<li class="splide__slide">
 					<div class="splide__slide__inner">
 
-						<img src="../../assets/images/planets/mars.jpg"
+						<img alt="image" loading="lazy" src="../../assets/images/planets/mars.jpg"
 						     alt="">
 						<h3 class="splide__heading">Mars</h3>
 						<div class="splide__desc">

@@ -80,7 +80,7 @@ $settings = get_settings();
 
       add.addEventListener( 'click', function() {
         splide03.add( [
-          `<li class="splide__slide"><img src="../../assets/images/pics/slide${ String( ++index ).padStart( 2, '0' ) }.jpg"></li>`,
+          `<li class="splide__slide"><img alt="image" loading="lazy" src="../../assets/images/pics/slide${ String( ++index ).padStart( 2, '0' ) }.jpg"></li>`,
         ] );
       } );
 
@@ -129,22 +129,22 @@ $settings = get_settings();
   <div class="splide__track">
     <ul class="splide__list">
       <li style="width: 100px" class="splide__slide">
-        <img src="../../assets/images/pics/slide01.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide01.jpg">
       </li>
       <li style="width: 200px" class="splide__slide">
-        <img src="../../assets/images/pics/slide02.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide02.jpg">
       </li>
       <li style="width: 100px" class="splide__slide">
-        <img src="../../assets/images/pics/slide03.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide03.jpg">
       </li>
       <li style="width: 200px" class="splide__slide">
-        <img src="../../assets/images/pics/slide04.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide04.jpg">
       </li>
       <li style="width: 300px" class="splide__slide">
-        <img src="../../assets/images/pics/slide05.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide05.jpg">
       </li>
       <li style="width: 200px" class="splide__slide">
-        <img src="../../assets/images/pics/slide06.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide06.jpg">
       </li>
     </ul>
   </div>

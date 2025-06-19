@@ -60,7 +60,7 @@ $settings = get_settings();
       <?php
       for ( $i = 0; $i < 10; $i++ ) {
         echo '<li class="splide__slide">';
-        printf( '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPc9/3HfwAI1gOuq1Su+AAAAABJRU5ErkJggg==" data-splide-lazy="https://source.unsplash.com/random/960x540?sig=%s">', $i + 1 );
+        printf( '<img alt="image" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPc9/3HfwAI1gOuq1Su+AAAAABJRU5ErkJggg==" data-splide-lazy="https://source.unsplash.com/random/960x540?sig=%s">', $i + 1 );
         echo '</li>' . PHP_EOL;
       }
       ?>

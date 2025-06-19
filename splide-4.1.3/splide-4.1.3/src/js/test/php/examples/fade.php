@@ -56,19 +56,19 @@ $settings = get_settings();
   <div class="splide__track">
     <ul class="splide__list">
       <li class="splide__slide">
-        <img src="../../assets/images/pics/slide01.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide01.jpg">
         <p>
           Lorem ipsum dolor sit amet, quod sale at pro, everti iisque tractatos sit ea. Agam alterum sit at. Libris petentium his ne, ne eam detraxit inimicus tractatos. Ius mundi verear ad, at percipit constituto pro, ei possim eirmod quo. Vim laudem aperiam reprehendunt in.
         </p>
       </li>
       <li class="splide__slide">
-        <img src="../../assets/images/pics/slide02.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide02.jpg">
         <p>
           Has cu etiam veniam recusabo, his animal nostrud fabellas ne. Vis suas qualisque eu, eum ei impedit civibus, an solum definiebas pro.
         </p>
       </li>
       <li class="splide__slide">
-        <img src="../../assets/images/pics/slide03.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide03.jpg">
         <p>
           Mollis epicuri laboramus ea qui, his ei meis graecis quaestio. Ius ne suscipit prodesset. Qui at delicata euripidis eloquentiam, eius solum volumus eum eu. Usu eu deserunt abhorreant, errem qualisque nec in. Te has labitur virtute hendrerit, cum quaeque oportere mediocritatem in, eos imperdiet intellegam id.
         </p>

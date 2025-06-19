@@ -48,11 +48,11 @@ $settings = get_settings();
 
       // var renderer = new SplideRenderer(
       //   [
-      //     '<img src="../../assets/images/pics/slide01.jpg">',
-      //     '<img src="../../assets/images/pics/slide02.jpg">',
-      //     '<img src="../../assets/images/pics/slide03.jpg">',
-      //     '<img src="../../assets/images/pics/slide04.jpg">',
-      //     '<img src="../../assets/images/pics/slide05.jpg">',
+      //     '<img alt="image" loading="lazy" src="../../assets/images/pics/slide01.jpg">',
+      //     '<img alt="image" loading="lazy" src="../../assets/images/pics/slide02.jpg">',
+      //     '<img alt="image" loading="lazy" src="../../assets/images/pics/slide03.jpg">',
+      //     '<img alt="image" loading="lazy" src="../../assets/images/pics/slide04.jpg">',
+      //     '<img alt="image" loading="lazy" src="../../assets/images/pics/slide05.jpg">',
       //   ],
       //   options
       // );
@@ -60,32 +60,32 @@ $settings = get_settings();
       var renderer = new SplideRenderer(
         [
           {
-            html : '<img src="../../assets/images/pics/slide01.jpg">',
+            html : '<img alt="image" loading="lazy" src="../../assets/images/pics/slide01.jpg">',
             attrs: {
               dataTest: 1,
               class: 'test',
             },
           },
           {
-            html : '<img src="../../assets/images/pics/slide02.jpg">',
+            html : '<img alt="image" loading="lazy" src="../../assets/images/pics/slide02.jpg">',
             attrs: {
               dataTest: 2,
             },
           },
           {
-            html : '<img src="../../assets/images/pics/slide03.jpg">',
+            html : '<img alt="image" loading="lazy" src="../../assets/images/pics/slide03.jpg">',
             attrs: {
               dataTest: 3,
             },
           },
           {
-            html : '<img src="../../assets/images/pics/slide04.jpg">',
+            html : '<img alt="image" loading="lazy" src="../../assets/images/pics/slide04.jpg">',
             attrs: {
               dataTest: 4,
             },
           },
           {
-            html : '<img src="../../assets/images/pics/slide05.jpg">',
+            html : '<img alt="image" loading="lazy" src="../../assets/images/pics/slide05.jpg">',
             attrs: {
               dataTest: 5,
             },

@@ -69,7 +69,7 @@ $settings = get_settings();
       <?php
       for ( $i = 0; $i < 10; $i++ ) {
         echo '<li class="splide__slide">';
-        printf( '<img src="../../assets/images/pics/slide%02d.jpg">', $i + 1 );
+        printf( '<img alt="image" loading="lazy" src="../../assets/images/pics/slide%02d.jpg">', $i + 1 );
         echo '</li>' . PHP_EOL;
       }
       ?>
@@ -83,7 +83,7 @@ $settings = get_settings();
       <?php
       for ( $i = 0; $i < 10; $i++ ) {
         echo '<li class="splide__slide">';
-        printf( '<img src="../../assets/images/pics/slide%02d.jpg">', $i + 1 );
+        printf( '<img alt="image" loading="lazy" src="../../assets/images/pics/slide%02d.jpg">', $i + 1 );
         echo '</li>' . PHP_EOL;
       }
       ?>

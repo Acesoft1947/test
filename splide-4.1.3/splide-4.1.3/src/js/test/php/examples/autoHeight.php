@@ -42,22 +42,22 @@ $settings = get_settings();
   <div class="splide__track">
     <ul class="splide__list">
       <li style="height: 500px" class="splide__slide">
-        <img src="../../assets/images/pics/slide01.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide01.jpg">
       </li>
       <li style="height: 300px" class="splide__slide">
-        <img src="../../assets/images/pics/slide02.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide02.jpg">
       </li>
       <li style="height: 400px" class="splide__slide">
-        <img src="../../assets/images/pics/slide03.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide03.jpg">
       </li>
       <li style="height: 200px" class="splide__slide">
-        <img src="../../assets/images/pics/slide04.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide04.jpg">
       </li>
       <li style="height: 300px" class="splide__slide">
-        <img src="../../assets/images/pics/slide05.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide05.jpg">
       </li>
       <li style="height: 200px" class="splide__slide">
-        <img src="../../assets/images/pics/slide06.jpg">
+        <img alt="image" loading="lazy" src="../../assets/images/pics/slide06.jpg">
       </li>
     </ul>
   </div>

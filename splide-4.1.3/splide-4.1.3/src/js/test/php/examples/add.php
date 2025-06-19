@@ -37,8 +37,8 @@ $settings = get_settings();
 
   add.addEventListener( 'click', function() {
     splide.add( [
-      '<li class="splide__slide"><img src="../../assets/images/pics/slide15.jpg"></li>',
-      '<li class="splide__slide"><img src="../../assets/images/pics/slide16.jpg"></li>',
+      '<li class="splide__slide"><img alt="image" loading="lazy" src="../../assets/images/pics/slide15.jpg"></li>',
+      '<li class="splide__slide"><img alt="image" loading="lazy" src="../../assets/images/pics/slide16.jpg"></li>',
     ] );
   } );
 
