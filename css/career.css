@@ -18,13 +18,13 @@ input[type="text"] {
     margin: 2rem 0;
 }
 
-.search-form {
+.search-form>form {
     display: flex;
     gap: 1.5rem;
     margin: 4rem 0;
 }
 
-.search-form>button {
+.search-form>form>button {
     border-radius: 50%;
     padding: 1rem;
     background: #1E63AD;
@@ -49,7 +49,7 @@ input[type="text"] {
     font-weight: bold;
 }
 
-.jobs>.filters>ul>li:hover>a {
+.jobs>.filters>ul>li>a:hover {
     color: #1E63AD;
 }
 
@@ -110,17 +110,17 @@ input[type="text"] {
         padding: 2rem;
     }
 
-    .search-form {
+    .search-form>form {
         margin: 2rem 0;
         flex-direction: column;
         gap: 1rem;
     }
 
-    .search-form>button {
+    .search-form>form>button {
         width: 3rem;
     }
 
-    .search-form>button>img {
+    .search-form>form>button>img {
         width: 1rem;
     }
 

@@ -111,10 +111,10 @@
                 </li>
 
                 <li class="has-submenu flex-center">
-                    <a >Products</a>
+                    <a>Products</a>
                 </li>
 
-                <li class="has-submenu flex-center"><a >Industries&nbsp;&nbsp;<img
+                <li class="has-submenu flex-center"><a>Industries&nbsp;&nbsp;<img
                             src="./images/icons/dropdown-icon.svg" /></a>
 
                     <div class="submenu" style="transform: translate(30%, 0);">
@@ -320,87 +320,25 @@
         </p>
 
         <div class="search-form">
-            <input type="text" placeholder="Search Jobs" />
+            <form onsubmit="return search()">
+                <input type="text" placeholder="Search Jobs" />
 
-            <input type="text" placeholder="Type Locations" />
+                <input type="text" placeholder="Type Locations" />
 
-            <button class="search">
-                <img src="./images/icons/search.svg" />
-            </button>
+                <button type="submit" class="search">
+                    <img src="./images/icons/search.svg" />
+                </button>
+            </form>
         </div>
 
         <div class="jobs">
             <div class="filters">
-                <ul>
-                    <li class="active"><a >All Positions (17)</a></li>
-                    <li><a >Engineering (7)</a></li>
-                    <li><a >Product (1)</a></li>
-                    <li><a >Design (4)</a></li>
-                    <li><a >Operation (3)</a></li>
-                    <li><a >Marketing (2)</a></li>
+                <ul id="department-list">
                 </ul>
             </div>
 
             <div class="listings">
-                <ul>
-                    <li>
-                        <h2>Full Stack Developers</h2>
-                        <ul class="tags">
-                            <li>Tartu</li>
-                            <li>Full time</li>
-                        </ul>
-                        <p>Due to growing workload, we are looking for experienced and talented Full-Stack Developers to
-                            join our fast-paced Engineering team. You will work closely with Product, Design and
-                            Marketing to analyze, develop, debug, test, roll-out and support new and existing product
-                            features.</p>
-                        <div class="flex-end">
-                            <button class="see-positions">See Positions</button>
-                        </div>
-                    </li>
-                    <li>
-                        <h2>Application developer (react native)</h2>
-                        <ul class="tags">
-                            <li>Tartu</li>
-                            <li>Full time</li>
-                        </ul>
-                        <p>Due to growing workload, we are looking for experienced and talented Full-Stack Developers to
-                            join our fast-paced Engineering team. You will work closely with Product, Design and
-                            Marketing to analyze, develop, debug, test, roll-out and support new and existing product
-                            features.</p>
-                        <div class="flex-end">
-                            <button class="see-positions">See Positions</button>
-                        </div>
-                    </li>
-                    <li>
-                        <h2>Senior Product designer</h2>
-                        <ul class="tags">
-                            <li>Hybrid</li>
-                            <li>Tartu</li>
-                            <li>Full time</li>
-                        </ul>
-                        <p>Due to growing workload, we are looking for experienced and talented Full-Stack Developers to
-                            join our fast-paced Engineering team. You will work closely with Product, Design and
-                            Marketing to analyze, develop, debug, test, roll-out and support new and existing product
-                            features.</p>
-                        <div class="flex-end">
-                            <button class="see-positions">See Positions</button>
-                        </div>
-                    </li>
-                    <li>
-                        <h2>Product Manager</h2>
-                        <ul class="tags">
-                            <li>Remote</li>
-                            <li>Netherlands</li>
-                            <li>Full-time</li>
-                        </ul>
-                        <p>Due to growing workload, we are looking for experienced and talented Full-Stack Developers to
-                            join our fast-paced Engineering team. You will work closely with Product, Design and
-                            Marketing to analyze, develop, debug, test, roll-out and support new and existing product
-                            features.</p>
-                        <div class="flex-end">
-                            <button class="see-positions">See Positions</button>
-                        </div>
-                    </li>
+                <ul id="job-list">
                 </ul>
 
                 <div class="flex-center">
@@ -494,10 +432,10 @@
                         <div class="heading">Careers</div>
                         <div class="content">
                             <ul>
-                                <li><a >Work Culture at Acesoft Labs</a></li>
-                                <li><a >Why Acesoft?</a></li>
-                                <li><a >Current Oppurtunites</a></li>
-                                <li><a >Employee Testimonials</a></li>
+                                <li><a>Work Culture at Acesoft Labs</a></li>
+                                <li><a>Why Acesoft?</a></li>
+                                <li><a>Current Oppurtunites</a></li>
+                                <li><a>Employee Testimonials</a></li>
                             </ul>
                         </div>
                     </div>
@@ -526,14 +464,114 @@
             </div>
 
             <div class="media">
-                <a ><img src="./images/media-links/media-x.svg" /></a>&nbsp;&nbsp;
-                <a ><img src="./images/media-links/media-linkedin.svg" /></a>&nbsp;&nbsp;
-                <a ><img src="./images/media-links/media-fb.svg" /></a>
+                <a><img src="./images/media-links/media-x.svg" /></a>&nbsp;&nbsp;
+                <a><img src="./images/media-links/media-linkedin.svg" /></a>&nbsp;&nbsp;
+                <a><img src="./images/media-links/media-fb.svg" /></a>
             </div>
         </div>
     </footer>
 
     <script src="./js/index.js"></script>
+    <script>
+        window.onhashchange = () => {
+            window.location.reload();
+        };
+
+        const hashValue = window.location.hash.substring(1).toLowerCase();
+
+        var departments = [
+            { value: "all", label: "All Positions", count: 17 },
+            { value: "engineering", label: "Engineering", count: 7 },
+            { value: "product", label: "Product", count: 1 },
+            { value: "design", label: "Design", count: 3 },
+            { value: "operations", label: "Opertations", count: 5 },
+            { value: "marketing", label: "Marketing", count: 2 },
+        ];
+
+
+        // select department
+        const match = departments.find(dep => dep.value.toLowerCase() === hashValue);
+
+        var jobs = [
+            {
+                title: "Full Stach Developer",
+                tags: ["Tartu", "Full time"],
+                description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
+                link: ""
+            },
+            {
+                title: "Application Developer",
+                tags: ["Tartu", "Full time"],
+                description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
+                link: ""
+            },
+            {
+                title: "Senior Product Designer",
+                tags: ["Tartu", "Full time"],
+                description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
+                link: ""
+            },
+            {
+                title: "Product Manager",
+                tags: ["Tartu", "Full time"],
+                description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
+                link: ""
+            }
+        ];
+
+        // render departments
+        var departmentList = document.getElementById("department-list");
+        departments.forEach(function (department) {
+            var li = document.createElement("li");
+            var a = document.createElement("a");
+            a.textContent = `${department.label} (${department.count || 0})`;
+            a.href = `#${department.value}`;
+
+            // Add "active" class conditionally
+            const isMatch = match && department.value === match.value;
+            const isDefault = !match && department.value === "all";
+
+            if (isMatch || isDefault) {
+                li.classList.add("active");
+            }
+
+            li.appendChild(a);
+            departmentList.append(li);
+        });
+
+        // render jobs
+        var jobList = document.getElementById("job-list");
+        jobs.forEach(function (job) {
+            var li = document.createElement("li");
+            var title = document.createElement("h2");
+            title.textContent = job.title;
+            li.appendChild(title);
+            var tagsUl = document.createElement("ul");
+            tagsUl.classList.add("tags");
+            job.tags.forEach(function (tag) {
+                var tagLi = document.createElement("li");
+                tagLi.textContent = tag;
+                tagsUl.appendChild(tagLi);
+            });
+            li.appendChild(tagsUl);
+            var desc = document.createElement("p");
+            desc.textContent = job.description;
+            li.appendChild(desc);
+            var flexEndDiv = document.createElement("div");
+            flexEndDiv.classList.add("flex-end");
+            var button = document.createElement("button");
+            button.classList.add("see-positions");
+            button.textContent = "See Positions";
+            flexEndDiv.appendChild(button);
+            li.appendChild(flexEndDiv);
+            jobList.appendChild(li);
+        });
+
+        function search() {
+            console.log("search job");
+            return false;
+        }
+    </script>
 </body>
 
 </html>
