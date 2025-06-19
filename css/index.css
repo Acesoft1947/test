@@ -90,6 +90,10 @@ nav {
     transform: rotate(180deg);
 }
 
+.mobile-only {
+    display: none;
+}
+
 .submenu {
     display: none;
     border-radius: 1rem;

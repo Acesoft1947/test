@@ -106,6 +106,14 @@
 
 /* big landscape tablets, laptops, and desktops */
 @media (max-width:1025px) {
+    .mobile-only {
+        display: block;
+    }
+
+    .navigation>ul {
+        display: none;
+    }
+
     nav {
         height: 4rem;
         margin: 0 2rem;
