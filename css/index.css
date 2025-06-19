@@ -628,6 +628,10 @@ footer ul {
     line-height: 1.8;
 }
 
+footer ul>li {
+    margin-bottom: 0.2rem;
+}
+
 footer>.footer-content>.footer-info>.address,
 footer>.footer-content>.footer-info>.links {
     display: grid;
@@ -659,6 +663,7 @@ footer>.footer-copyrights>.media {
 
 /* slider */
 .slider-buttons {
+    margin: 0 0.5rem;
     margin-top: 2rem;
 }
 
