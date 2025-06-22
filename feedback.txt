@@ -10,7 +10,7 @@
 
 9. Splider autoplay should work
 
-10. Update footer in all pages from home page
+10. Update footer in all pages from home page [ Done ]
 
 11. Update logo in all pages from home page [ Done ]
 
