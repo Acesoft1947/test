@@ -136,6 +136,10 @@
         padding: 3rem 3rem 0 3rem;
     }
 
+    .welcome-image>img {
+        width: 100vw;
+    }
+
     .offerings>.marquee-wrapper {
         width: 70%;
     }
@@ -306,6 +310,10 @@
     .explore>.explore-info {
         flex-direction: column;
     }
+
+    .welcome-text {
+        margin-left: 2rem;
+    }
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
@@ -343,7 +351,6 @@
     }
 
     .welcome-text {
-        margin-left: 4rem;
         padding: 1rem 1rem 0 1rem;
     }
 
@@ -409,7 +416,7 @@
         padding: 4rem 2rem;
     }
 
-    
+
     .semiconductor,
     .ai {
         padding: 2rem;
