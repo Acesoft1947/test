@@ -15,10 +15,6 @@
     background: linear-gradient(to right, #fcd30b 0%, #1E63AD 80%);
 }
 
-.tabs-container * {
-    font-family: 'Switzer Light' !important;
-}
-
 .tab-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +60,7 @@
     color: #fff !important;
     display: none;
     padding: 4rem;
+    font-weight: 100 !important;
 }
 
 .tab-content.active {
@@ -73,6 +70,7 @@
 .tab-content>h3,
 .tab-content>p {
     margin-bottom: 1rem;
+    font-weight: 100;
 }
 
 .tab-content>ul,

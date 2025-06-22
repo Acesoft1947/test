@@ -18,7 +18,7 @@
 
 13. Update numbering in tabs content
 
-14. Update font think in tabs content
+14. Update font thin in tabs content [ Done ]
 
 15. Update about content
 
