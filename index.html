@@ -309,7 +309,7 @@
         </div>
 
         <div class="welcome-image">
-            <img src="./images/welcome-banner/home-welcome-bg.svg" />
+            <img alt="image" loading="lazy" src="./images/welcome-banner/home-welcome-bg.svg" />
         </div>
     </div>
     <div class="offerings">
@@ -759,19 +759,6 @@
     <script type="module" src="./splide-4.1.3/js/splide.min.js"></script>
     <script type="module">
         document.addEventListener('DOMContentLoaded', function () {
-            // var engagementsSplier = new Splide('#engagements-splide', {
-            //     type: 'loop',
-            //     arrows: false,
-            //     pagination: false,
-            //     autoplay: false,
-            //     perPage: 3,
-            //     breakpoints: {
-            //         481: {
-            //             perPage: 2
-            //         }
-            //     }
-            // }).mount();
-
             var sectorsSplier = new Splide('#sectors-splide', {
                 type: 'loop',
                 arrows: false,
@@ -784,14 +771,6 @@
                     }
                 }
             }).mount();
-
-            // document.getElementById('custom-prev').addEventListener('click', () => {
-            //     engagementsSplier.go('<'); // Go to previous slide
-            // });
-
-            // document.getElementById('custom-next').addEventListener('click', () => {
-            //     engagementsSplier.go('>'); // Go to next slide
-            // });
         });
     </script>
 </body>
