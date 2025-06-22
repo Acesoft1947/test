@@ -1,40 +1,34 @@
 @font-face {
-    font-family: 'Borna Medium';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
-    src: local('Borna Medium'), url('../fonts/borna-medium.woff') format('woff');
+    src: local('Roboto'), url('../fonts/Roboto/Roboto-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Switzer Regular';
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: normal;
-    src: local('Switzer Regular'), url('../fonts/Switzer-Regular.woff') format('woff');
+    font-weight: 100;
+    src: local('Roboto Thin'), url('../fonts/Roboto/Roboto-Thin.woff') format('woff');
 }
 
-@font-face {
-    font-family: 'Switzer Light';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Switzer Light'), url('../fonts/Switzer-Light.woff') format('woff');
+.font-thin {
+    font-weight: 100;
 }
 
 h1 {
     font-size: 2.625rem;
     /* 42px */
-    font-family: 'Borna Medium';
 }
 
 h2 {
     font-size: 2.25rem;
-    font-family: 'Borna Medium';
 }
 
 h3 {
     font-size: 1.5rem;
     /* 24px */
     font-weight: normal;
-    font-family: 'Switzer Regular';
 }
 
 h3>b {
@@ -44,20 +38,7 @@ h3>b {
 p {
     font-size: 1rem;
     /* 16px */
-    font-family: 'Switzer Light';
     opacity: 0.8;
-}
-
-.borna {
-    font-family: 'Borna Medium';
-}
-
-.switzer {
-    font-family: 'Switzer Regular';
-}
-
-.switzer-light {
-    font-family: 'Switzer Light';
 }
 
 @media (max-width:1281px) {
