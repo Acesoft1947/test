@@ -20,6 +20,6 @@
 
 14. Update font thin in tabs content [ Done ]
 
-15. Update about content
+15. Update about content [ Done ]
 
 16. Mahi needs to update tabs in energy and logistics

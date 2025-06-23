@@ -52,7 +52,7 @@
     background: linear-gradient(to right, #fcd30b 0%, #1E63AD 80%);
 }
 
-.tab-button.active>h3{
+.tab-button.active>h3 {
     font-weight: bold;
 }
 
@@ -95,7 +95,28 @@
     font-size: 24px;
 }
 
+.tab-content>.points>ul>li {
+    margin-bottom: 2rem;
+}
+
+.tab-content>.points>ul>li>h3 {
+    font-weight: 100;
+}
+
+.tab-content>.points>ul>li>h3>.arrow {
+    display: inline-block;
+    margin-right: 1rem;
+    vertical-align: middle;
+
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 10px solid #000;
+}
+
 @media (max-width:1281px) {
+
     .tab-content>ul>li,
     .tab-content>ol>li,
     .tab-content>ol>li::marker {
@@ -114,6 +135,7 @@
 }
 
 @media (max-width: 481px) {
+
     .tab-content>ul>li,
     .tab-content>ol>li,
     .tab-content>ol>li::marker {
