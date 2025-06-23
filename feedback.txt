@@ -8,7 +8,7 @@
 
 8. Check trusters animation [ Done ]
 
-9. Splider autoplay should work
+9. Splider autoplay should work [ Done ]
 
 10. Update footer in all pages from home page [ Done ]
 

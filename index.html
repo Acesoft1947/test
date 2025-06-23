@@ -13,11 +13,7 @@
     <link rel="stylesheet" href="./css/typography.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
-    <link rel="preload" href="./splide-4.1.3/css/splide.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="./splide-4.1.3/css/splide.min.css">
-    </noscript>
+    <link rel="stylesheet" href="./splide-4.1.3/css/splide.min.css">
     <title>Acesoft</title>
 </head>
 
@@ -548,31 +544,31 @@
             <section id="sectors-splide" class="splide sectors-splide" aria-label="sectors">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide" data-splide-interval="1000">
+                        <li class="splide__slide">
                             <a href="./industries/bfsi.html" class="sector-item">
                                 <span>BFSI</span>
                                 <img alt="image" loading="lazy" src="./images/sectors/sector-1.svg" />
                             </a>
                         </li>
-                        <li class="splide__slide" data-splide-interval="1000">
+                        <li class="splide__slide">
                             <a href="./industries/energy-and-utilities.html" class="sector-item">
                                 <span>Energy & Utilities</span>
                                 <img alt="image" loading="lazy" src="./images/sectors/sector-2.svg" />
                             </a>
                         </li>
-                        <li class="splide__slide" data-splide-interval="1000">
+                        <li class="splide__slide">
                             <a href="./industries/logistics.html" class="sector-item">
                                 <span>Logistics</span>
                                 <img alt="image" loading="lazy" src="./images/sectors/sector-3.svg" />
                             </a>
                         </li>
-                        <li class="splide__slide" data-splide-interval="1000">
+                        <li class="splide__slide">
                             <a href="./industries/manufacturing.html" class="sector-item">
                                 <span>Manufacturing</span>
                                 <img alt="image" loading="lazy" src="./images/sectors/sector-4.svg" />
                             </a>
                         </li>
-                        <li class="splide__slide" data-splide-interval="1000">
+                        <li class="splide__slide">
                             <a href="./industries/oil-and-gas-industries.html" class="sector-item">
                                 <span>Oil & Gas</span>
                                 <img alt="image" loading="lazy" src="./images/sectors/sector-5.svg" />
@@ -771,21 +767,27 @@
     </footer>
 
     <script src="./js/index.js"></script>
-    <script type="module" src="./splide-4.1.3/js/splide.min.js"></script>
-    <script type="module">
+    <script src="./splide-4.1.3/js/splide.min.js"></script>
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
             var sectorsSplier = new Splide('#sectors-splide', {
                 type: 'loop',
                 arrows: false,
                 pagination: false,
-                autoplay: true,
+                autoplay: false,
+                speed: 1000,
                 perPage: 5,
                 breakpoints: {
                     481: {
                         perPage: 2
                     }
                 }
-            }).mount();
+            });
+            sectorsSplier.mount();
+
+            setInterval(() => {
+                sectorsSplier.go('+1'); // Move to next
+            }, 3000);
         });
     </script>
 </body>
