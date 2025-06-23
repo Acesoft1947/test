@@ -445,6 +445,11 @@
     .digital-transformation-banner>button>span>img {
         width: 0.8rem;
     }
+
+    footer>.footer-content>.footer-info>.address,
+    footer>.footer-content>.footer-info>.links {
+        gap: 2rem 0.5rem;
+    }
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
