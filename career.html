@@ -597,25 +597,58 @@
             return false;
         }
 
-        function getJobs() {
-            const xhr = new XMLHttpRequest();
-            xhr.responseType = "json";
-            xhr.open("GET", "url to be filled", true);
+        function getToken() {
+            const url = 'https://api.ceipal.com/v1/createAuthtoken/';
 
-            xhr.onload = function () {
-                if (xhr.status === 200) {
-                    console.log("Response:", xhr.response);
-                } else {
-                    console.error("Error:", xhr.status, xhr.statusText);
+            const data = {
+                email: "renuka.v@acesoftlabs.com",
+                password: "Success@09",
+                api_key: "3a654caf98e7b3a01c361c1fb7f0bee8d32523047d2c03c77872e5b90027b2fb",
+                json: 1
+            };
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            }).then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
                 }
-            };
-
-            xhr.onerror = function () {
-                console.error("Request failed.");
-            };
-
-            xhr.send();
+                return response.text();
+            }).then(xmlText => {
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xmlText, "application/xml");
+                const accessToken = xmlDoc.getElementsByTagName("access_token")[0]?.textContent;
+                console.log('Token', accessToken);
+                getJobs(accessToken);
+            }).catch(error => {
+                console.error('Error:', error);
+            });
         }
+
+        function getJobs(accessToken) {
+            const url = "https://api.ceipal.com/getCustomJobPostingDetails/Z3RkUkt2OXZJVld2MjFpOVRSTXoxZz09/4830915db0e97833d80597266664fba5?paging_length=10";
+
+            fetch(url, {
+                method: 'GET',
+                headers: {
+                    'Authorization': `bearer ${accessToken}`,
+                    'Access-Control-Allow-Origin': '*'
+                }
+            }).then(getResponse => {
+                if (!getResponse.ok) throw new Error('GET request failed');
+                return getResponse.json();
+            }).then(data => {
+                console.log("GET response data:", data);
+            }).catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        getToken();
     </script>
 </body>
 
