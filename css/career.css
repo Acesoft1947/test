@@ -68,6 +68,7 @@ input[type="text"] {
     border: 1px solid;
     margin-right: 0.5rem;
     border-radius: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 .listings .see-positions {
@@ -84,9 +85,35 @@ input[type="text"] {
     border: 1px solid #000;
 }
 
+.career-photo-grid {
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.career-photo-grid>div>h1 {
+    background: linear-gradient(to right, #FCD30B 0%, #549CE9 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    padding: 1rem 2rem;
+}
+
+.career-photo-grid>img {
+    width: 100%;
+}
+
 @media (max-width:1025px) {
     .career-content {
         padding: 4rem 8rem;
+    }
+
+    
+    .career-photo-grid {
+        padding: 0;
+        padding-top: 1rem;
     }
 }
 
@@ -135,5 +162,15 @@ input[type="text"] {
     .listings .tags>li {
         padding: 0.5rem;
         font-size: 0.8rem;
+    }
+
+     .career-photo-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 376px) {
+    .career-photo-grid {
+        grid-template-columns: 1fr;
     }
 }

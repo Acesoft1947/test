@@ -358,9 +358,18 @@
                 </ul>
 
                 <div class="flex-center">
-                    <button class="show-more">Show more ...</button>
+                    <button id="see-more" class="show-more" onclick="seeAllJobs()">Show more ...</button>
                 </div>
             </div>
+        </div>
+
+        <div class="career-photo-grid">
+            <div class="flex-center"><h1>Follow us on social to see what we're up to!</h1></div>
+            <img src="./images/career/career-1.jpeg" />
+            <img src="./images/career/career-2.jpeg" />
+            <img src="./images/career/career-3.jpeg" />
+            <img src="./images/career/career-4.jpeg" />
+            <img src="./images/career/career-5.jpeg" />
         </div>
     </div>
 
@@ -507,6 +516,30 @@
         };
 
         const hashValue = window.location.hash.substring(1).toLowerCase();
+        let jobs = [{
+            title: "Full Stach Developer",
+            tags: ["Tartu", "Full time"],
+            description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
+            link: ""
+        },
+        {
+            title: "Application Developer",
+            tags: ["Tartu", "Full time"],
+            description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
+            link: ""
+        },
+        {
+            title: "Senior Product Designer",
+            tags: ["Tartu", "Full time"],
+            description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
+            link: ""
+        },
+        {
+            title: "Product Manager",
+            tags: ["Tartu", "Full time"],
+            description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
+            link: ""
+        }];
 
         var departments = [
             { value: "all", label: "All Positions", count: 17 },
@@ -520,33 +553,6 @@
 
         // select department
         const match = departments.find(dep => dep.value.toLowerCase() === hashValue);
-
-        var jobs = [
-            {
-                title: "Full Stach Developer",
-                tags: ["Tartu", "Full time"],
-                description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
-                link: ""
-            },
-            {
-                title: "Application Developer",
-                tags: ["Tartu", "Full time"],
-                description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
-                link: ""
-            },
-            {
-                title: "Senior Product Designer",
-                tags: ["Tartu", "Full time"],
-                description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
-                link: ""
-            },
-            {
-                title: "Product Manager",
-                tags: ["Tartu", "Full time"],
-                description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
-                link: ""
-            }
-        ];
 
         // render departments
         var departmentList = document.getElementById("department-list");
@@ -645,13 +651,94 @@
                 if (!getResponse.ok) throw new Error('GET request failed');
                 return getResponse.json();
             }).then(data => {
-                console.log("GET response data:", data);
+                console.log("GET response data:", data.results);
+                jobs = data.results;
+                const jobsToDisplay = jobs.slice(0, 5);
+                buildUI(jobsToDisplay, 5);
             }).catch(error => {
                 console.error('Error:', error);
             });
         }
 
-        getToken();
+        function buildUI(results, visibleItems) {
+            var jobList = document.getElementById("job-list");
+
+            results.forEach(function (job) {
+                var li = document.createElement("li");
+
+                // tile
+                var title = document.createElement("h2");
+                title.textContent = job.job_title;
+                li.appendChild(title);
+
+                // tags
+                var tagsUl = document.createElement("ul");
+                tagsUl.classList.add("tags");
+
+                // job type
+                if (job.job_type != "") {
+                    var jobTypeTag = document.createElement("li");
+                    jobTypeTag.textContent = job.job_type;
+                    tagsUl.appendChild(jobTypeTag);
+                }
+
+                // remote tag
+                var remoteTag = document.createElement("li");
+                var remoteTagText = "";
+                switch (job.remote_job) {
+                    case "Yes": remoteTagText = "Remote";
+                        break;
+                    case "No": remoteTagText = "";
+                        break;
+                    default: remoteTagText = job.remote_job;
+                }
+                if (remoteTagText != "") {
+                    remoteTag.textContent = remoteTagText;
+                    tagsUl.appendChild(remoteTag);
+                }
+
+                //skills tag
+                if (job.public_job_description != "" && job.primary_skills != "") {
+                    var skills = job.primary_skills.split(",");
+                    skills.forEach((skill) => {
+                        var skillTag = document.createElement("li");
+                        skillTag.textContent = skill;
+                        tagsUl.appendChild(skillTag);
+                    });
+                    li.appendChild(tagsUl);
+                }
+
+                var br = document.createElement("br");
+                li.appendChild(br);
+
+                // description
+                var desc = document.createElement("p");
+                desc.innerHTML = job.public_job_description == "" ? job.primary_skills : job.public_job_description;
+                li.appendChild(desc);
+
+                // button
+                var flexEndDiv = document.createElement("div");
+                flexEndDiv.classList.add("flex-end");
+                var button = document.createElement("button");
+                button.classList.add("see-positions");
+                button.textContent = "See Positions";
+                button.addEventListener("click", function () {
+                    window.open(job.apply_job, "_blank");
+                });
+                flexEndDiv.appendChild(button);
+
+                li.appendChild(flexEndDiv);
+                jobList.appendChild(li);
+            });
+        }
+
+        function seeAllJobs() {
+            const btn = document.getElementById("see-more");
+            btn.style.display = "none";
+            buildUI(jobs, jobs.length);
+        }
+
+        // getToken();
     </script>
 </body>
 
