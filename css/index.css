@@ -118,7 +118,7 @@ nav {
     flex-direction: column;
     text-align: center;
     width: 15rem;
-    padding: 2rem;
+    padding: 1rem;
     background: rgba(217, 217, 217, 1);
 }
 
@@ -133,9 +133,9 @@ nav {
 
 .submenu>.submenu-items {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
-    padding: 2rem 3rem;
+    padding: 2rem;
 }
 
 .submenu>.submenu-items>.submenu-item {
@@ -159,7 +159,7 @@ nav {
 .submenu>.submenu-items>.submenu-item>.image-wrapper>img {
     display: block;
     width: 1.5rem;
-    height: auto;
+    height: 1.5rem;
 }
 
 .submenu>li {
@@ -570,7 +570,7 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 6rem 24rem;
+    padding: 6rem 18rem;
     flex-direction: column;
     gap: 2rem;
     background-color: #FCD30B;
