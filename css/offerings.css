@@ -17,6 +17,12 @@
     background-size: 100%;
 }
 
+.highlight {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
 .accordion-container {
     background-image: url('../images/divider-offering.svg');
     background-position: top;
@@ -188,6 +194,10 @@
     .accordion-container {
         padding: 4rem;
     }
+
+    .highlight {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 961px) {
@@ -254,6 +264,7 @@
     .offering-bullets,
     .cubicles {
         margin-bottom: 2rem;
+        gap: 1rem;
     }
 
     .arrow-list li {
