@@ -22,8 +22,9 @@
 
     .semiconductor,
     .ai {
-        padding: 6rem 10rem;
+        padding: 6rem;
         gap: 4rem;
+        grid-template-columns: 1.5fr 1fr;
     }
 
     .sectors>.sectors-info {
