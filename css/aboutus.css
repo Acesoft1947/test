@@ -60,6 +60,7 @@
 .leadership>.points>ul>li,
 .bullet>.points>ul>li {
     margin-bottom: 1rem;
+    font-weight: 100;
 }
 
 .leadership>.points>ul>li:before,
@@ -94,7 +95,7 @@
 }
 
 .leadership>.info>h1,
-.leadership>.info>p {
+.leadership>.info>h3 {
     margin-bottom: 2rem;
 }
 
