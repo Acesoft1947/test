@@ -51,16 +51,21 @@
     margin-bottom: 6rem;
 }
 
+.offering-bullets>.offering-bullet {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    gap: 1rem;
+}
+
 .offering-bullets>.offering-bullet>.header {
     display: flex;
-    justify-content: start;
-    align-items: center;
+    flex-direction: column;
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
-.offering-bullets>.offering-bullet>.header>img {
-    width: 2rem;
+.offering-bullets>.offering-bullet>img {
+    width: 4rem;
     height: auto;
 }
 
