@@ -218,6 +218,10 @@ nav {
     width: 63vw;
 }
 
+.home-welcome-image > img {
+    width: 70vw;
+}
+
 .container {
     margin: 4rem 10rem;
 }
@@ -234,7 +238,7 @@ nav {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
 }
 
 .offering {
@@ -291,7 +295,7 @@ nav {
     gap: 1rem;
     padding-bottom: 2rem;
     width: max-content;
-    animation: marquee 20s linear infinite;
+    animation: marquee 30s linear infinite;
 }
 
 .offerings>.marquee-wrapper>.trusters-image-row>div {
@@ -300,7 +304,7 @@ nav {
 }
 
 .offerings>.marquee-wrapper>.trusters-image-row img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     display: block;
 }
@@ -824,6 +828,6 @@ footer>.footer-copyrights>.media {
     }
 
     to {
-        transform: translateX(-75%);
+        transform: translateX(-60%);
     }
 }
