@@ -4,13 +4,13 @@ A simple, lightweight web project built with **HTML**, **CSS**, and [Splide.js](
 
 ## 🚀 Overview
 
-Acesoft Labs is a responsive and accessible front-end project with minimal dependencies. It uses the [Splide.js](https://splidejs.com/) library to implement a customizable and performant image carousel. No frameworks — just raw HTML, CSS, and a touch of JS for interactivity.
+Acesoft Labs is a responsive and accessible front-end project with minimal dependencies. It uses the [Splide.js](https://splidejs.com/) library to implement a customizable and performant image carousel. No frameworks - just raw HTML, CSS, and a touch of JS for interactivity.
 
 ## 🔧 Tech Stack
 
 - **HTML5**
 - **CSS3**
-- **[Splide.js](https://splidejs.com/)** — lightweight, flexible carousel/slider library
+- **[Splide.js](https://splidejs.com/)** - lightweight, flexible carousel/slider library
 
 
 ## 🎯 Features
@@ -25,7 +25,7 @@ Acesoft Labs is a responsive and accessible front-end project with minimal depen
 1. Clone the repo: git clone https://github.com/your-username/x.git
 2. Open index.html in your browser.
 
-No installation or build step required — it's ready to go.
+No installation or build step required - it's ready to go.
 
 ## License
 MIT License. Feel free to use and adapt.

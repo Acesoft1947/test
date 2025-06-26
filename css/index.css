@@ -182,7 +182,8 @@ nav {
 /* Welcome */
 .welcome-banner {
     background: linear-gradient(100deg, #000000 0%, #121F2C 40%, #1E63AD 100%);
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
@@ -200,6 +201,7 @@ nav {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    white-space: nowrap;
 }
 
 .welcome-image {
@@ -215,11 +217,11 @@ nav {
 }
 
 .welcome-image > img {
-    width: 63vw;
+    width: 100%;
 }
 
 .home-welcome-image > img {
-    width: 70vw;
+    width: 66vw;
 }
 
 .container {
