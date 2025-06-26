@@ -297,7 +297,7 @@ nav {
     gap: 1rem;
     padding-bottom: 2rem;
     width: max-content;
-    animation: marquee 30s linear infinite;
+    animation: marquee 100s linear infinite;
 }
 
 .offerings>.marquee-wrapper>.trusters-image-row>div {
