@@ -828,6 +828,6 @@ footer>.footer-copyrights>.media {
     }
 
     to {
-        transform: translateX(-60%);
+        transform: translateX(-50%);
     }
 }
