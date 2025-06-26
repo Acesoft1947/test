@@ -188,6 +188,7 @@ nav {
     justify-content: space-between;
     gap: 2rem;
     position: relative;
+    overflow: hidden;
 }
 
 .welcome-text {
@@ -336,6 +337,10 @@ nav {
 
 .explore>.explore-info>.explore-content>.heading {
     margin-bottom: 2rem;
+}
+
+.explore>.explore-info>.explore-content>.heading>img {
+    width: 100%;
 }
 
 .explore>.explore-info>.explore-image {

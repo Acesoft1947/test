@@ -46,6 +46,14 @@ p {
     font-size: 2.4rem;
 }
 
+.explore-items>.explore-item>.heading>h2 {
+    font-size: 2rem;
+}
+
+.explore-items>.explore-item>.caption>h3 {
+    font-size: 1.3rem;
+}
+
 @media (max-width:1281px) {
     h1 {
         font-size: 2rem;
@@ -62,6 +70,14 @@ p {
     .welcome-text>h1,
     .introduction>.highlight {
         font-size: 1.8rem;
+    }
+
+    .explore-items>.explore-item>.heading>h2 {
+        font-size: 1.6rem;
+    }
+
+    .explore-items>.explore-item>.caption>h3 {
+        font-size: 1.1rem;
     }
 }
 
@@ -85,6 +101,14 @@ p {
     .welcome-text>h1,
     .introduction>.highlight {
         font-size: 1.1rem;
+    }
+
+    .explore-items>.explore-item>.heading>h2 {
+        font-size: 1rem;
+    }
+
+    .explore-items>.explore-item>.caption>h3 {
+        font-size: 0.8rem;
     }
 }
 

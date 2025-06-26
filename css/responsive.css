@@ -16,6 +16,10 @@
         padding: 0 0.5rem;
     }
 
+    .explore>.explore-info>.explore-content>.heading>img {
+        width: 90%;
+    }
+
     .sectors {
         padding: 4rem 10rem;
     }
@@ -130,11 +134,12 @@
     }
 
     .welcome-banner {
-        flex-wrap: wrap;
+        grid-template-columns: 1fr 3fr;
     }
 
     .welcome-text {
-        padding: 3rem 3rem 0 3rem;
+        padding: 0;
+        margin-left: 3rem;
     }
 
     .welcome-image>img {
@@ -267,6 +272,15 @@
 
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (max-width:961px) {
+    .welcome-banner {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-text {
+        padding: 1rem 0;
+        margin-left: 3rem;
+    }
+
     .offerings>.marquee-wrapper>.trusters-image-row {
         gap: 0;
     }
