@@ -143,11 +143,11 @@ nav {
     justify-content: start;
     align-items: center;
     gap: 1rem;
-    width: 30rem;
 }
 
 .submenu>.submenu-items>.submenu-item>.info>p {
     margin-bottom: 0.5rem;
+    white-space: nowrap;
 }
 
 .submenu>.submenu-items>.submenu-item>.image-wrapper {
