@@ -63,13 +63,13 @@
     transform: translateY(-50%);
     width: 1.5rem;
     height: 1.5rem;
-    background-image: url("../images/icons/minus-black.svg");
+    background-image: url('../images/icons/plus-black.svg');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .accordion-header.open::after {
-    background-image: url('../images/icons/plus-black.svg');
+    background-image: url("../images/icons/minus-black.svg");
 }
 
 .accordion-content {
