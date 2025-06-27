@@ -186,6 +186,12 @@
     height: 2rem;
 }
 
+@media (max-width:1881px) {
+    .highlight {
+        grid-template-columns: 1fr 1.8fr;
+    }
+}
+
 @media (max-width:1025px) {
     .container {
         padding: 4rem;

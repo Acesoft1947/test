@@ -307,7 +307,7 @@
         </h3>
         </div>
 
-        <div class="search-form">
+        <!-- <div class="search-form">
             <form onsubmit="return search()">
                 <input type="text" placeholder="Search Jobs" />
 
@@ -317,13 +317,15 @@
                     <img alt="image" loading="lazy" src="./images/icons/search.svg" />
                 </button>
             </form>
-        </div>
+        </div> -->
+
+        <br /><br />
 
         <div class="jobs">
-            <div class="filters">
+            <!-- <div class="filters">
                 <ul id="department-list">
                 </ul>
-            </div>
+            </div> -->
 
             <div class="listings">
                 <ul id="job-list">
@@ -424,7 +426,7 @@
                         <div class="heading">Services</div>
                         <div class="content">
                             <ul>
-                               <li><a href="./offerings/enterprise-software.html">Enterprise Software Development</a>
+                                <li><a href="./offerings/enterprise-software.html">Enterprise Software Development</a>
                                 </li>
                                 <li><a href="./offerings/cloud-solutions.html">Cloud Computing</a></li>
                                 <li><a href="./offerings/data-and-ai-driven-bussiness.html">Data & AI-Droven Business
@@ -497,27 +499,153 @@
 
         const hashValue = window.location.hash.substring(1).toLowerCase();
         let jobs = [{
-            title: "Full Stack Developer",
-            tags: ["Tartu", "Full time"],
-            description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
+            title: "SAP S/4 HANA Transportation Management Consultant",
+            tags: ["Support Project", "Full time"],
+            description: `
+            <b>Project</b>:  Support Project<br />
+<b>Location</b>: Bengaluru, India<br />
+<b>Job type</b>: Full Time<br /><br />
+
+<b>Job Description</b><br />
+The candidate must be a graduate (BE/B.Tech Preferable) and should have experience of SAP S/4HANA TM.<br />
+
+Must have at least two implementations/roll-out experience in S/4 HANA projects
+Hands on experience in implementation, rollout and support projects is mandatory.
+As SAP TM Consultant, candidate should have experience in business requirements gathering, Perform Gap Analysis, draft AS-IS & TO-BE documents.<br />
+
+Should be well versed with Freight Order Management, Charges & Freight settlement, Freight Agreement. Good understanding in the concepts of Transportation Network, Transportation Mode, Tendering.
+Candidate should be well versed with Road Freight, Ocean Freight & Air freight business process understanding. Stage building concepts of these scenarios.
+Experience in integration with other SAP modules like SD, MM, FI, WM module is required.<br />
+
+Must be well versed with relevant master data like – Business Partner (with various transportation related roles), Transportation Network
+Experience in analysis, design, develop and testing skills required.
+Should have worked on interfaces involving SAP & Non-SAP Systems
+Hands on experience in documentation related to SAP, i.e., converting BRD to configuration document / functional specifications, creating test scenarios and test cases and testing (UT, FT/S & IT) is required.
+Work experience in any incident handling tool is required.<br /><br />
+
+<b>Desired Soft Skills:</b><br />
+<ul style='padding-left: 1rem'>
+    <li style="list-style-type: disc">Must have excellent analytical, troubleshooting, and problem-solving skills.</li>
+    <li style="list-style-type: disc">Expertise to understand, execute and deliver.</li>
+    <li style="list-style-type: disc">Excellent oral and written communication skills</li>
+    <li style="list-style-type: disc">Ability to work independently or in conjunction with a team.</li>
+    <li style="list-style-type: disc">Ability to work issues through resolution.</li>
+    <li style="list-style-type: disc">Ability to understand business processes from a customer perspective.</li>
+    <li style="list-style-type: disc">Ability to work in a team environment, effectively interacting with others.</li>
+    <li style="list-style-type: disc">Must be results oriented, adaptable, flexible, and proactive.</li>
+<ul>
+            `,
             link: ""
         },
         {
-            title: "Application Developer",
-            tags: ["Tartu", "Full time"],
-            description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
+            title: "SAP CO - Product Costing -Senior Consultant",
+            tags: ["Full time"],
+            description: `
+            <b>Project</b>:  Support Project<br />
+<b>Location</b>: Bengaluru, India<br />
+<b>Job type</b>: Full Time<br /><br />
+
+<b>Job Description</b>
+
+S/4 HANA CO Consultant with 8 ~ 10 years of relevant experience<br />
+
+Technical Skill sets: S/4 HANA Controlling - specialization in  Profitability Analysis<br />
+
+Should have worked on at least two E2E Implementations on SAP S/4 HANA with General Controlling, Product costing and CO-PA.<br />
+Should be well versed in demonstrated configuration skills in key areas like Cost center accounting, profit center accounting and internal orders.<br />
+Candidate should have experience in writing Functional Specifications independently and should have worked on Custom Objects build from Scratch to Deployments.<br />
+ Experience with designing, building and deploying process MTO (Make to order) and MTS (Make to stock).<br />
+Material ledger configuration for material valuation in multiple currencies and actual cost calculation for actual material reports.<br />
+Material Ledger, multiple valuations, able to perform a kind of real-time consolidation across the group for all purchases, manufacturing, sales, intercompany sales etc. removing intercompany revenues & COGS in real-time. <br />
+Experience executing a business blueprint and documenting business requirements that can be understood by a technical process team. <br />
+Expert with cost accounting, and product costing/inventory valuation. <br />
+Strong knowledge of the following scenarios i.e. Product cost by order, Product cost by period, Product cost by sales order.<br />
+Experience to Configure Report Painter, SAP queries. <br />
+Should have experience on migration Cockpit. <br />
+Should have experience in controlling month end year-end activities.<br />
+Must have experience in configuration and enhancement in COPA characteristic derivation and valuation. <br />
+Must have worked with various reporting requirements in COPA. <br />
+Must have configured COPA planning functions. <br />
+Design and Configure CO-PA (Profitability Analysis) reporting, forms, derivation rules and structures, product and customer hierarchy, PA settlement, realignments, and integration issues. <br />
+Cross module Integration of CO with SD (Sales & Distribution), MM (Materials Management) and Production Planning. <br /><br />
+ 
+
+<b>Must Have Skills:</b><br />
+
+<ul>
+    <li>Deep expertise on SAP S4 HANA CO application functionality, design and implementation. </li>
+    <li>S4 HANA Implementation & support experience in SAP CO including CCA, PCA, IO, CO-PC, CO-PA, CO-MM.</li>
+    <li>Must be skilled in user support, troubleshooting and error resolution.</li>
+    <li>Must have good experience in WRICEF </li>
+    <li>Must have worked on Interfaces using IDOCs, ALE, Proxies, EDI and RFC. </li>
+    <li>Must have strong business understanding and suggest SAP solutions for various business scenarios </li>
+    <li>Ability to help resolve complex issues and independently manage critical/complex situations </li>
+    <li>Perform detailed analysis of complex business process requirements and provide appropriate system solutions; identify, interpret, validate and document customer requirements</li>
+    <li>Use ABAP debugging skills to troubleshoot issues  </li>
+    <li>Collaborate with ABAP developers to understand their code, read ABAP code, and assist in debugging, ensuring efficient and effective ABAP solutions </li>
+    <li>Work self-directed and independently; may act as subject matter expert (SME)</li>
+</ul>
+<br /><br />
+ 
+
+<b>Specific knowledge and tools:</b><br />
+
+<ul>
+    <li>Excellent communication & strong collaboration skills</li>
+    <li>Flexible to adapt to fast changing environment and self-motivated</li>
+    <li>Creating technical design specifications to ensure compliance with the functional teams and IT Management</li>
+    <li>Analytical thinking, high level of comprehension and independent working style.</li>
+    <li>Familiarity with the IT Service Management (ITSM) framework and processes, including incident management, problem management, change management, and service request management.</li>
+    <li>Seeking candidates who are flexible and willing to work on shifts as required.</li>
+</ul>
+        `,
             link: ""
         },
         {
-            title: "Senior Product Designer",
-            tags: ["Tartu", "Full time"],
-            description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
-            link: ""
-        },
-        {
-            title: "Product Manager",
-            tags: ["Tartu", "Full time"],
-            description: "Due to growing workload, we are looking for experienced and talented Full-Stack Developers to join our fast-paced Engineering team. You will work closely with Product, Design and Marketing to analyze, develop, debug, test, roll-out and support new and existing product features.",
+            title: "Senior Principal Engineer (Azure architect with DevOps knowledge) ",
+            tags: ["Full time"],
+            description: `
+<b>Location</b>: Bengaluru, India<br />
+<b>Job type</b>: Full Time<br />
+<b>Experience</b>: 7+ years of experience<br /><br />
+ 
+<b>Preferred Skills and Tools:</b>
+
+<ul>
+    <li>Microsoft Azure (IaaS, PaaS, Networking, Governance, Cost Management)</li>
+    <li>Azure DevOps, Terraform , AKS , Containers</li>
+    <li>ExpressRoute, Load Balancers, NSGs , Firewalls</li>
+    <li>Azure Sentinel, monitoring and security compliance</li>
+    <li>Strong understanding of hybrid cloud architectures and enterprise integration</li>
+</ul>
+ 
+<br /><br />
+ <b>Responsibilities:</b>
+ 
+ • Lead the design, implementation, and optimization of Azure-based solutions, ensuring security, scalability, and cost-efficiency.<br />
+ 
+ • Serve as the technical lead and subject matter expert for Windows and Azure cloud infrastructure, including governance, networking, and platform integration.<br />
+ 
+ • Collaborate with cross-functional teams (Product Owners, Project Managers, DevOps, and Security) to transform business needs into technical solutions.<br />
+ 
+ • Manage infrastructure tasks across hybrid platforms including Azure and on-premise systems.<br />
+ 
+ • Drive incident response, root cause analysis, and resolution coordination for infrastructure and connectivity issues.<br />
+ 
+ • Implement and maintain monitoring, alerting, and vulnerability management using tools like Azure Sentinel.<br />
+ 
+ • Perform cost optimization by managing VM sizing, reservations, and resource clean-up.<br />
+ 
+ • Handle firewall rules, DNS, certificates, ExpressRoute connectivity, and Azure networking (VWAN, VNETs, Load Balancers).<br />
+ 
+ • Plan and execute OS patching and ensure platform compliance with DTAG/DTICI standards.<br />
+ 
+ • Lead migration and integration efforts, ensuring minimal disruption and adherence to timelines<br />
+ 
+ • Maintain and enhance CI/CD pipelines using Azure DevOps, and support project environments (Dev/Prod).<br />
+ 
+ • Contribute to long-term infrastructure roadmap planning and mentor junior engineers as needed.<br />
+ `,
             link: ""
         }];
 
@@ -535,24 +663,24 @@
         const match = departments.find(dep => dep.value.toLowerCase() === hashValue);
 
         // render departments
-        var departmentList = document.getElementById("department-list");
-        departments.forEach(function (department) {
-            var li = document.createElement("li");
-            var a = document.createElement("a");
-            a.textContent = `${department.label} (${department.count || 0})`;
-            a.href = `#${department.value}`;
+        // var departmentList = document.getElementById("department-list");
+        // departments.forEach(function (department) {
+        //     var li = document.createElement("li");
+        //     var a = document.createElement("a");
+        //     a.textContent = `${department.label} (${department.count || 0})`;
+        //     a.href = `#${department.value}`;
 
-            // Add "active" class conditionally
-            const isMatch = match && department.value === match.value;
-            const isDefault = !match && department.value === "all";
+        //     // Add "active" class conditionally
+        //     const isMatch = match && department.value === match.value;
+        //     const isDefault = !match && department.value === "all";
 
-            if (isMatch || isDefault) {
-                li.classList.add("active");
-            }
+        //     if (isMatch || isDefault) {
+        //         li.classList.add("active");
+        //     }
 
-            li.appendChild(a);
-            departmentList.append(li);
-        });
+        //     li.appendChild(a);
+        //     departmentList.append(li);
+        // });
 
         // render jobs
         var jobList = document.getElementById("job-list");
@@ -570,7 +698,7 @@
             });
             li.appendChild(tagsUl);
             var desc = document.createElement("p");
-            desc.textContent = job.description;
+            desc.innerHTML = job.description;
             li.appendChild(desc);
             var flexEndDiv = document.createElement("div");
             flexEndDiv.classList.add("flex-end");
