@@ -14,6 +14,10 @@ function gotoContact() {
     window.location.href = '/test/contact.html';
 }
 
+function gotToAboutUs() {
+    window.location.href = '/about-us.html';
+}
+
 function toggleMobileMenu() {
     document.getElementById("mobile-menu").classList.toggle("open");
 }

@@ -77,16 +77,18 @@ input[type="text"] {
     border-radius: 2rem;
     padding: 1rem 2rem;
     margin: 0.5rem 0;
+    font-size: 1rem;
 }
 
 .show-more {
     border-radius: 2rem;
     padding: 1rem 2rem;
     border: 1px solid #000;
+    font-size: 1rem;
 }
 
 .career-photo-grid {
-    padding: 4rem 0;
+    padding: 1rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;

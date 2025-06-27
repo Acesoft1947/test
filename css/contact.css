@@ -45,6 +45,7 @@
     width: 100%;
     border: none;
     border-bottom: 1px solid #D1D1D1;
+    font-size: 1.5rem;
 }
 
 .contact-content>.form input:focus-visible {
@@ -59,10 +60,11 @@
 .contact-content>.form>form>button {
     color: #fff;
     background: #1E63AD;
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 2rem;
     text-transform: uppercase;
     margin: 1.5rem 0;
+    font-size: 1rem;
 }
 
 .contact-content>.form>form>button img {
@@ -114,6 +116,7 @@
     color: #fff;
     background: #1E63AD;
     border-radius: 2rem;
+    font-size: 1rem;
 }
 
 .learn-more>button>span {
@@ -164,6 +167,14 @@
 }
 
 @media (max-width:481px) {
+    p {
+        font-size: 1rem !important;
+    }
+
+    h1 {
+        font-size: 1.2rem !important;
+    }
+
     .container {
         margin: 2rem;
     }
@@ -180,5 +191,9 @@
     .learn-more {
         flex-direction: column;
         padding: 2rem;
+    }
+
+    .contact-content>.form>form>.name {
+        flex-direction: column;
     }
 }
