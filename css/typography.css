@@ -36,9 +36,8 @@ h3>b {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     /* 16px */
-    opacity: 0.8;
 }
 
 .welcome-text>h1,
@@ -95,7 +94,7 @@ p {
     }
 
     p {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
 
     .welcome-text>h1,
