@@ -85,14 +85,6 @@ p {
     .introduction>.highlight {
         font-size: 1.1rem;
     }
-
-    .explore-items>.explore-item>.heading>h2 {
-        font-size: 1rem;
-    }
-
-    .explore-items>.explore-item>.caption>h3 {
-        font-size: 0.8rem;
-    }
 }
 
 @media (max-width:321px) {
