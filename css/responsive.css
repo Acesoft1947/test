@@ -26,7 +26,7 @@
 
     .semiconductor,
     .ai {
-        padding: 6rem;
+        padding: 4rem;
         gap: 4rem;
         grid-template-columns: 1.5fr 1fr;
     }
@@ -191,7 +191,7 @@
     .semiconductor,
     .ai {
         gap: 2rem;
-        padding: 4rem 4rem;
+        padding: 4rem;
         grid-template-columns: 1fr;
     }
 

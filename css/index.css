@@ -391,7 +391,7 @@ nav {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     margin: -10rem 4rem 2rem 4rem;
-    padding: 8rem 12rem;
+    padding: 4rem 12rem;
     gap: 10rem;
     z-index: 999;
     position: relative;
@@ -432,7 +432,7 @@ nav {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
     margin: 0 4rem;
-    padding: 8rem 12rem;
+    padding: 4rem 12rem;
     gap: 10rem;
     position: relative;
 }
