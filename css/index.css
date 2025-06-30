@@ -296,7 +296,7 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
     width: max-content;
     animation: marquee 100s linear infinite;
 }
@@ -374,7 +374,8 @@ nav {
 
 }
 
-.explore>.explore-items>.explore-item>.caption>h3 {
+.explore>.explore-items>.explore-item>.caption,
+.explore>.explore-info>.explore-content>.caption {
     color: #fff;
 }
 
