@@ -488,7 +488,7 @@ nav {
 /* Sectors */
 .sectors {
     background: #fff;
-    padding: 4rem 12rem;
+    padding: 4rem 12rem 0 12rem;
 }
 
 .sectors>.sectors-info {
