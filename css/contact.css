@@ -15,6 +15,12 @@
     margin: 2rem 0;
 }
 
+.contact-content>.info>.contact>h3,
+.contact-content>.info>.head-office>h3,
+.contact-content>.info>.usa-office>h3 {
+    font-size: 1.2rem;
+}
+
 .contact-content>.info>.contact>.heading,
 .contact-content>.info>.head-office>.heading,
 .contact-content>.info>.usa-office>.heading {
