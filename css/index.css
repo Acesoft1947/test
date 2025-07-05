@@ -326,7 +326,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 6rem;
-    padding: 12rem 10rem 14rem 10rem;
+    padding: 6rem 10rem 14rem 10rem;
 }
 
 .explore>.explore-info {
@@ -666,8 +666,14 @@ footer>.footer-content>.footer-info>.address {
     margin-bottom: 2rem;
 }
 
+footer>.footer-content>.footer-info>.address>div>.content>p {
+    color: #EAECF0;
+    opacity: 0.8;
+}
+
 footer>.footer-copyrights {
-    color: #F8F8F8;
+    color: #EAECF0;
+    opacity: 0.8;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2rem;

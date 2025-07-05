@@ -1,6 +1,6 @@
 @media (max-width: 1441px) {
     .explore {
-        padding: 10rem 8rem 14rem 8rem;
+        padding: 6rem 8rem 14rem 8rem;
     }
 
     .offering {
@@ -160,7 +160,7 @@
     }
 
     .explore {
-        padding: 8rem 6rem 16rem 6rem;
+        padding: 4rem 6rem 16rem 6rem;
         gap: 6rem;
     }
 
@@ -408,7 +408,7 @@
     }
 
     .explore {
-        padding: 4rem 2rem 16rem 2rem;
+        padding: 2rem 2rem 16rem 2rem;
         gap: 2rem;
     }
 
