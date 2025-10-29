@@ -345,7 +345,7 @@
                 <h3>Fill out the form below or email us at info@acesoftlabs.com</h3>
                 <br />
 
-                <form action="https://formsubmit.co/info@acesoftlabs.com" method="POST">
+                <form id="contactForm" action="https://formsubmit.co/info@acesoftlabs.com" method="POST">
                     <div class="name">
                         <input type="text" placeholder="First name" required />
 
@@ -354,9 +354,9 @@
 
                     <input type="hidden" name="_next" value="https://Acesoft1947.github.io/test/contact.html">
 
-                    <input type="text" placeholder="Email" required /> <br />
+                    <input type="email" id="email" placeholder="Email" required /> <br />
 
-                    <input type="text" placeholder="Phone" required /> <br />
+                    <input type="text" id="phone" placeholder="Phone" required /> <br />
 
                     <input type="text" placeholder="Message" required /> <br />
 
@@ -536,6 +536,31 @@
     </footer>
 
     <script src="./js/index.js"></script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+
+            // ✅ Email validation regex (basic)
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            // ✅ Indian phone number validation
+            // Accepts: +91XXXXXXXXXX, 91XXXXXXXXXX, or 10-digit numbers starting with [6-9]
+            const phonePattern = /^(\+91[\-\s]?)?[6-9]\d{9}$/;
+
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                event.preventDefault();
+                return;
+            }
+
+            if (!phonePattern.test(phone)) {
+                alert("Please enter a valid Indian phone number (10 digits, starts with 6-9).");
+                event.preventDefault();
+                return;
+            }
+        });
+    </script>
 </body>
 
 </html>
