@@ -1,0 +1,44 @@
+
+backend:
+  name: turbo-github
+  repo: maddymastering/acesoft-test
+  branch: main
+  turbo_site_id: 55121387-fc95-4daa-9386-bba8cbdeef91
+
+media_folder: "images/blog"
+public_folder: "/images/blog"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "blog"
+    create: true
+    slug: "{{slug}}"
+
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Description"
+        name: "description"
+        widget: "string"
+        required: false
+
+      - label: "Featured Image"
+        name: "image"
+        widget: "image"
+        required: false
+
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "blog-post.njk"
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
