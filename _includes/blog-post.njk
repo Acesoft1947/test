@@ -278,11 +278,13 @@
     </header>
 
     <main class="container">
-        {% if image %}
-            <img src="{{ image }}" alt="{{ title }}">
+       {% if title %}
+            <h2>{{title}}</h2>
         {% endif %}
 
-        <article>
+        <br />
+        <br />
+        <article class="blog-content">
             {{ content | safe }}
         </article>
     </main>
